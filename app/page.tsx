@@ -9,6 +9,7 @@ import Search from '@/components/Search'
 import {
     Bars3Icon,
     MagnifyingGlassIcon,
+    XMarkIcon,
 } from '@heroicons/react/20/solid'
 
 import {
@@ -39,17 +40,24 @@ const Home = () => {
         <nav
             className='fixed top-0 flex backdrop-blur justify-between w-full p-4 border-b dark:border-b-[#333]'
         >
-            <h1 className="text-xl dark:text-[#eee]">
+            <h1 className="text-2xl font-mono dark:text-[#eee]">
                 CBET
             </h1>
             <div className='flex space-x-2'>
                 <MagnifyingGlassIcon
                     className='w-8 h-8 rounded-full border dark:border-[#333] p-1.5 cursor-pointer dark:text-[#eee]'
                 />
-                <Bars3Icon
-                    className='w-8 h-8 rounded-full border dark:border-[#333] p-1.5 cursor-pointer dark:text-[#eee]'
-                    onClick={handleMenuButtonClick}
-                />
+                {showMainMenu ? (
+                        <XMarkIcon
+                            className='w-8 h-8 rounded-full border dark:border-[#333] p-1.5 cursor-pointer dark:text-[#eee]'
+                            onClick={handleMenuButtonClick}
+                        />
+                    ): (
+                        <Bars3Icon
+                            className='w-8 h-8 rounded-full border dark:border-[#333] p-1.5 cursor-pointer dark:text-[#eee]'
+                            onClick={handleMenuButtonClick}
+                        />
+                )}
             </div>
         </nav>
         {showMainMenu && <DropDownMenu />}
@@ -58,11 +66,14 @@ const Home = () => {
             className='w-full p-5 pt-16 space-y-4 max-w-7xl'
         >
             <p
-                className='text-left text-2xl font-semibold dark:text-[#eee]'
+                className='text-left text-xl font-semibold dark:text-[#eee]'
             >
                 Courses</p>
             <div className='w-full max-sm:justify-center max-lg:justify-center flex'>
-                <div className="w-fit grid grid-cols-4 max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-3">
+                <div className="w-fit grid grid-cols-4 max-sm:grid-cols-2 max-md:grid-cols-2 max-lg:grid-cols-3">
+                    <CourseCard />
+                    <CourseCard />
+                    <CourseCard />
                     <CourseCard />
                     <CourseCard />
                     <CourseCard />
