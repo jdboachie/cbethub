@@ -13,24 +13,28 @@ const LoginPage = () => {
             <h1 className="p-4 mb-4 text-center font-semibold text-3xl dark:text-[#eee]">
                 Log in to CBET hub
             </h1>
-            <div className="flex flex-col space-y-2 max-w-4xl">
-                <form action="" method="post">
+            <div className="flex flex-col space-y-3 max-w-4xl">
+                <form
+                    action=""
+                    method="post"
+                    className="space-y-2"
+                    >
                     <div className="flex flex-col space-y-1">
-                        <label htmlFor="email" className="text-sm font-semibold text-gray-600 dark:text-[#eee]">Email</label>
+                        <label htmlFor="email" className="text-xs text-gray-600 dark:text-[#eee]">Email</label>
                         <input
                             type="email"
                             name="email"
                             id="email"
-                            className="p-3 border rounded-lg dark:border-[#333]"
+                            className="p-3 border rounded-lg bg-white dark:bg-black dark:border-[#333]"
                         />
                     </div>
                     <div className="flex flex-col space-y-1">
-                        <label htmlFor="password" className="text-sm font-semibold text-gray-600 dark:text-[#eee]">Password</label>
+                        <label htmlFor="password" className="text-xs text-gray-600 dark:text-[#eee]">Password</label>
                         <input
                             type="password"
                             name="password"
                             id="password"
-                            className="p-3 border rounded-lg dark:border-[#333]"
+                            className="p-3 border rounded-lg bg-white dark:bg-black dark:border-[#333]"
                         />
                     </div>
                     <div className="flex justify-between items-center">
@@ -41,11 +45,11 @@ const LoginPage = () => {
                                 id="remember"
                                 className="p-3 border rounded-lg dark:border-[#333]"
                             />
-                            <label htmlFor="remember" className="text-sm font-semibold text-gray-600 dark:text-[#eee]">Remember me</label>
+                            <label htmlFor="remember" className="text-xs text-gray-600 dark:text-[#eee]">Remember me</label>
                         </div>
                         <Link
                             href="/forgot-password"
-                            className="text-sm font-semibold text-gray-600 dark:text-[#eee]"
+                            className="text-xs text-gray-600 dark:text-[#eee]"
                         >
                                 Forgot password?
                         </Link>
