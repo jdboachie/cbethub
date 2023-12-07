@@ -1,16 +1,8 @@
 'use client'
 
-import { useState } from 'react'
-
 import CourseCard from '@/components/CourseCard'
-import DropDownMenu from '@/components/DropDownMenu'
+import Header from '@/components/Header'
 import Search from '@/components/Search'
-
-import {
-    Bars3Icon,
-    MagnifyingGlassIcon,
-    XMarkIcon,
-} from '@heroicons/react/20/solid'
 
 import {
     ClockIcon,
@@ -21,47 +13,12 @@ import Link from 'next/link'
 
 
 const Home = () => {
-    // Use a grid background like partialprerendering.com
-
-    const [showMainMenu, setShowMainMenu] = useState(false)
-
-    const handleMenuButtonClick = () => {
-        setShowMainMenu(!showMainMenu)
-    }
-    const handleStrayClick = () => {
-        setShowMainMenu(false)
-    }
 
   return (
     <div
         className="flex flex-col items-center justify-center w-full flex-1 text-center space-y-5"
-        // onClick={handleStrayClick}
     >
-        <nav
-            className='fixed top-0 flex backdrop-blur justify-between w-full p-4 border-b dark:border-b-[#333]'
-        >
-            <h1 className="text-2xl font-mono dark:text-[#eee]">
-                CBET
-            </h1>
-            <div className='flex space-x-2'>
-                <MagnifyingGlassIcon
-                    className='w-8 h-8 rounded-full border dark:border-[#333] p-1.5 cursor-pointer dark:text-[#eee]'
-                />
-                {showMainMenu ? (
-                        <XMarkIcon
-                            className='w-8 h-8 rounded-full border dark:border-[#333] p-1.5 cursor-pointer dark:text-[#eee]'
-                            onClick={handleMenuButtonClick}
-                        />
-                    ): (
-                        <Bars3Icon
-                            className='w-8 h-8 rounded-full border dark:border-[#333] p-1.5 cursor-pointer dark:text-[#eee]'
-                            onClick={handleMenuButtonClick}
-                        />
-                )}
-            </div>
-        </nav>
-        {showMainMenu && <DropDownMenu />}
-
+        <Header />
         <main
             className='w-full p-5 pt-16 space-y-4 max-w-7xl'
         >
