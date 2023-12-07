@@ -7,7 +7,7 @@ const CourseCard = () => {
                 bg-gradient-to-b from-transparent via-transparent to-zinc-50 shadow-md transition duration-300 ease-in-out
                 hover:from-transparent hover:via-transparent hover:to-zinc-300 hover:shadow-lg
                 dark:hover:from-transparent dark:hover:via-transparent dark:hover:to-zinc-900 dark:hover:shadow-lg
-                dark:from-transparent dark:via-transparent dark:to-zinc-900 dark:shadow-lg'
+                dark:from-[#111] dark:via-[#111] dark:to-zinc-900 dark:shadow-lg'
     >
         <p
             className='text-left text-2xl font-bold dark:text-[#eee]'

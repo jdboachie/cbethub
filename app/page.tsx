@@ -27,10 +27,14 @@ const Home = () => {
     const handleMenuButtonClick = () => {
         setShowMainMenu(!showMainMenu)
     }
+    const handleStrayClick = () => {
+        setShowMainMenu(false)
+    }
 
   return (
     <div
         className="flex flex-col items-center justify-center w-full flex-1 text-center space-y-5"
+        // onClick={handleStrayClick}
     >
         <nav
             className='fixed top-0 flex backdrop-blur justify-between w-full p-4 border-b dark:border-b-[#333]'
