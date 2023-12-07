@@ -70,7 +70,7 @@ const Home = () => {
             >
                 Courses</p>
             <div className='w-full max-sm:justify-center max-lg:justify-center flex'>
-                <div className="w-fit grid grid-cols-4 max-sm:grid-cols-2 max-md:grid-cols-2 max-lg:grid-cols-3">
+                <div className="w-fit grid grid-cols-4 max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-3">
                     <CourseCard />
                     <CourseCard />
                     <CourseCard />
