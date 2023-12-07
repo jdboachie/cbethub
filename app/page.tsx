@@ -1,8 +1,15 @@
+'use client'
+
+import { useState } from 'react'
+
 import CourseCard from '@/components/CourseCard'
+import DropDownMenu from '@/components/DropDownMenu'
 import Search from '@/components/Search'
+
 import {
-    ArchiveBoxIcon
-} from '@heroicons/react/24/outline'
+    Bars3Icon,
+    MagnifyingGlassIcon,
+} from '@heroicons/react/20/solid'
 
 import {
     ClockIcon,
@@ -13,27 +20,51 @@ import Link from 'next/link'
 
 
 const Home = () => {
+    // Use a grid background like partialprerendering.com
+
+    const [showMainMenu, setShowMainMenu] = useState(false)
+
+    const handleMenuButtonClick = () => {
+        setShowMainMenu(!showMainMenu)
+    }
+
   return (
     <div
         className="flex flex-col items-center justify-center w-full flex-1 text-center space-y-5"
     >
         <nav
-            className='fixed top-0 flex backdrop-blur justify-between w-full p-3 border-b dark:border-b-[#333]'
+            className='fixed top-0 flex backdrop-blur justify-between w-full p-4 border-b dark:border-b-[#333]'
         >
-            <h1 className="text-lg font-semibold dark:text-[#eee]">
+            <h1 className="text-xl dark:text-[#eee]">
                 CBET
             </h1>
+            <div className='flex space-x-2'>
+                <MagnifyingGlassIcon
+                    className='w-8 h-8 rounded-full border dark:border-[#333] p-1.5 cursor-pointer dark:text-[#eee]'
+                />
+                <Bars3Icon
+                    className='w-8 h-8 rounded-full border dark:border-[#333] p-1.5 cursor-pointer dark:text-[#eee]'
+                    onClick={handleMenuButtonClick}
+                />
+            </div>
         </nav>
+        {showMainMenu && <DropDownMenu />}
 
         <main
-            className='w-full p-5 pt-20'
+            className='w-full p-5 pt-16 space-y-4 max-w-7xl'
         >
-            <p>Courses</p>
-            <div className="grid grid-cols-1 max-sm:grid-cols-1 max-md:grid-cols-2">
-                <CourseCard />
-                <CourseCard />
-                <CourseCard />
-                <CourseCard />
+            <p
+                className='text-left text-2xl font-semibold dark:text-[#eee]'
+            >
+                Courses</p>
+            <div className='w-full max-sm:justify-center max-lg:justify-center flex'>
+                <div className="w-fit grid grid-cols-4 max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-3">
+                    <CourseCard />
+                    <CourseCard />
+                    <CourseCard />
+                    <CourseCard />
+                </div>
+
             </div>
 
         </main>

@@ -2,11 +2,11 @@ import Link from 'next/link'
 
 const DropDownMenu = () => {
   return (
-    <div>
+    <div className='fixed top-10 right-4 backdrop-blur-xl'>
         <div
-            className='border rounded-lg w-fit h-fit justify-start items-start flex flex-col space-y-2 cursor-pointer shadow-lg'
+            className='border dark:border-[#333] rounded-lg w-fit h-fit justify-start items-start flex flex-col space-y-2 cursor-pointer shadow-lg'
         >
-            <div className='p-3 space-y-1 text-gray-500 text-xs flex flex-col w-max border-b text-left'>
+            <div className='p-3 space-y-1 text-gray-500 text-xs flex flex-col w-max border-b dark:border-b-[#333] text-left'>
                 <p className=''>Jude Boachie</p>
                 <p className=''>judeboachiekwame@gmail.com</p>
                 <p className=''>Computer Engineering</p>
