@@ -88,6 +88,11 @@ const Home = () => {
                 <p className='text-xs text-gray-500 px-2 flex'>23 files</p>
             </div>
         </div> */}
+        <footer
+            className='w-full h-40 flex justify-center items-center border-t text-xs dark:border-[#333] dark:text-[#eee]'
+        >
+            Built with ❤️ by Jude Boachie
+        </footer>
     </div>
   )
 }
