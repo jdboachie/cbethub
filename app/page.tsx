@@ -25,16 +25,46 @@ const Home = () => {
             <p
                 className='text-left text-xl font-semibold dark:text-[#eee]'
             >
-                Courses</p>
+                Courses
+            </p>
             <div className='w-full max-sm:justify-center max-lg:justify-center flex'>
-                <div className="w-fit grid grid-cols-4 max-sm:grid-cols-1 max-md:grid-cols-2 max-lg:grid-cols-3">
-                    <CourseCard />
-                    <CourseCard />
-                    <CourseCard />
-                    <CourseCard />
-                    <CourseCard />
-                    <CourseCard />
-                    <CourseCard />
+                <div className="w-fit grid grid-cols-5 max-sm:grid-cols-2 max-md:grid-cols-3 max-lg:grid-cols-4">
+                    <CourseCard
+                        courseName='Introduction to Computer Science'
+                        lecturerName='Dr. John Doe'
+                        tags={['Computer Engineering', 'Computer Science']}
+                    />
+                    <CourseCard
+                        courseName='Data Structures and Algorithms'
+                        lecturerName='Prof. Jane Smith'
+                        tags={['Computer Science', 'Programming']}
+                    />
+                    <CourseCard
+                        courseName='Web Development Fundamentals'
+                        lecturerName='Dr. Michael Johnson'
+                        tags={['Web Development', 'Frontend', 'Backend']}
+                    />
+                    <CourseCard
+                        courseName='Machine Learning Basics'
+                        lecturerName='Dr. Emily Brown'
+                        tags={['Artificial Intelligence', 'Data Science']}
+                    />
+                    <CourseCard
+                        courseName='Database Management Systems'
+                        lecturerName='Prof. David Lee'
+                        tags={['Database Design', 'SQL']}
+                    />
+                    <CourseCard
+                        courseName='Software Engineering Principles'
+                        lecturerName='Dr. Samantha White'
+                        tags={['Software Development', 'Project Management']}
+                    />
+                    <CourseCard
+                        courseName='Cybersecurity Fundamentals'
+                        lecturerName='Prof. Alex Rodriguez'
+                        tags={['Network Security', 'Information Systems']}
+/>
+
                 </div>
 
             </div>
