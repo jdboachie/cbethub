@@ -24,7 +24,7 @@ const Home = () => {
             className='w-full p-5 pt-16 space-y-4 max-w-7xl'
         >
             <p
-                className='w-full border px-2 text-left text-xl font-semibold dark:text-[#eee]'
+                className='w-full px-2 text-left text-lg font-semibold dark:text-[#eee]'
             >
                 Courses
             </p>
