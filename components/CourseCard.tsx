@@ -19,7 +19,7 @@ const CourseCard = (
     <Link
         className='border rounded-lg dark:border-[#333] w-full h-[50vh] max-sm:h-fit p-5 justify-end items-start flex flex-col space-y-2 m-1.5 cursor-pointer
                 transition duration-300 ease-in-out'
-        href={'/courses/' + courseCode?.toLowerCase().replace(/\s/g, '')}
+        href={'/course/' + courseCode?.toLowerCase()}
     >
         <p className="font-mono max-sm:text-xs">{courseCode}</p>
         <p
