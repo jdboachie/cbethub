@@ -24,12 +24,12 @@ const Home = () => {
             className='w-full p-5 pt-16 space-y-4 max-w-7xl'
         >
             <p
-                className='text-left text-xl font-semibold dark:text-[#eee]'
+                className='w-full border px-2 text-left text-xl font-semibold dark:text-[#eee]'
             >
                 Courses
             </p>
             <div className='w-full max-sm:justify-center max-lg:justify-center flex'>
-                <div className="w-fit grid grid-cols-5 max-sm:grid-cols-2 max-md:grid-cols-3 max-lg:grid-cols-4">
+                <div className="w-fit grid grid-cols-5 max-sm:grid-cols-1 max-md:grid-cols-3 max-lg:grid-cols-4">
                     <CourseCard
                         courseName='Introduction to Computer Science'
                         lecturerName='Dr. John Doe'
@@ -43,7 +43,7 @@ const Home = () => {
                     <CourseCard
                         courseName='Web Development Fundamentals'
                         lecturerName='Dr. Michael Johnson'
-                        tags={['Web Development', 'Frontend', 'Backend']}
+                        tags={['Web Development', 'Frontend', 'Backend', 'HTML', 'CSS', 'JavaScript']}
                     />
                     <CourseCard
                         courseName='Machine Learning Basics'

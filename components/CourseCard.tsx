@@ -15,7 +15,7 @@ const CourseCard = (
 ) => {
   return (
     <div
-        className='border dark:border-[#333] rounded-lg w-fit h-[50vh] max-sm:h-fit p-5 justify-end items-start flex flex-col space-y-2 m-1.5 cursor-pointer
+        className='border dark:border-[#333] rounded-lg w-full h-[50vh] max-sm:h-fit p-5 justify-end items-start flex flex-col space-y-2 m-1.5 cursor-pointer
                 bg-gradient-to-b from-transparent via-transparent to-zinc-50 shadow-md transition duration-300 ease-in-out hover:shadow-lg
                 dark:from-[#111] dark:via-[#111] dark:to-zinc-900 dark:shadow-lg'
     >
