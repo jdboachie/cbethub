@@ -20,6 +20,4 @@
 
 body {
   height: 100vh;
-  color: rgb(var(--foreground-rgb));
-  /* background-image: url('/public/grid.svg') */
 }
