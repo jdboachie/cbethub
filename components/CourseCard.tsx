@@ -30,7 +30,7 @@ const CourseCard = (
             {courseName}
         </p>
         <p
-            className='text-left pb-1 text-xs text-gray-500'
+            className='text-left pb-1 text-xs text-gray-500 dark:text-gray-400'
         >
             {lecturerName}
         </p>

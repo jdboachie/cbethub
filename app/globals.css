@@ -36,5 +36,5 @@ body {
 }
 
 .dark-blue-gradient {
-  @apply bg-gradient-to-r from-midnightblue-100 to-pacificblue-100 text-transparent bg-clip-text
+  @apply bg-gradient-to-r from-[#0a369d] to-pacificblue-100 text-transparent bg-clip-text
 }
