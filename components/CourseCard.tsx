@@ -25,7 +25,7 @@ const CourseCard = (
     >
         <p className="font-mono text-xs text-gray-500">{courseCode}</p>
         <p
-            className={`text-left pt-2 max-sm:text-md font-bold dark:text-[#eee] text-lg blue-gradient`}
+            className={`text-left pt-2 max-sm:text-md font-bold dark:text-[#eee] text-lg red-gradient`}
         >
             {courseName}
         </p>

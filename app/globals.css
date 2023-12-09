@@ -20,9 +20,16 @@
 
 body {
   height: 100vh;
-  @apply bg-white
+  @apply bg-[#EDF2F4]
 }
 
-.blue-gradient {
-  @apply bg-gradient-to-r from-starcommandblue-100 to-pacificblue-100 text-transparent bg-clip-text
+.secondary-text {
+  @apply text-[#8D99AE]
+}
+
+.red-gradient {
+  @apply bg-gradient-to-r from-[#D90429] to-[#EF233C] text-transparent bg-clip-text
+}
+.dark-blue-gradient {
+  @apply bg-gradient-to-r from-midnightblue-100 to-pacificblue-100 text-transparent bg-clip-text
 }
