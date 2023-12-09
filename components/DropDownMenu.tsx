@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 const DropDownMenu = () => {
   return (
-    <div className='fixed h-screen w-screen max-w-2xl top-11 right-0 p-4 bg-white dark:bg-black'>
+    <div className='fixed h-screen w-screen max-w-2xl top-11 right-0 p-4 bg-white dark:bg-black border-t dark:border-t-[#333#'>
         <div
             className='w-full h-fit justify-start items-start flex flex-col space-y-2 cursor-pointer'
         >

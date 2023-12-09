@@ -1,5 +1,7 @@
 import Link from "next/link"
 import Tag from "./Tag"
+import { oswald } from "@/lib/fonts"
+
 
 
 const CourseCard = (
@@ -17,13 +19,15 @@ const CourseCard = (
 ) => {
   return (
     <Link
-        className='border rounded-lg dark:border-[#333] w-full h-[50vh] max-sm:h-fit p-5 justify-end items-start flex flex-col space-y-2 m-1.5 cursor-pointer
-                transition duration-300 ease-in-out'
+        className='border rounded-lg dark:border-[#333] w-50 h-fit p-5 justify-end items-start flex flex-col space-y-2 m-1.5 cursor-pointer
+                   bg-gradient-to-b from-white via-white to-gray-100 dark:from-purple-700 dark:via-purple-500 dark:to-blue-700
+                   hover:shadow-xl hover:scale-105
+                   transition duration-300 ease-in-out'
         href={'/course/' + courseCode?.toLowerCase()}
     >
-        <p className="font-mono max-sm:text-xs">{courseCode}</p>
+        <p className="font-mono text-xs">{courseCode}</p>
         <p
-            className='text-left text-lg max-sm:text-sm font-semibold dark:text-[#eee]'
+            className='text-left max-sm:text-sm font-semibold dark:text-[#eee] text-lg ${silkscreen.className} bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text'
         >
             {courseName}
         </p>
@@ -51,7 +55,7 @@ const CourseCard = (
         </div> */}
 
         <div
-            className="w-full flex flex-wrap space-x-0.5 space-y-0.5"
+            className="w-full flex flex-wrap space-x-0.5 space-y-0.5 justify-start"
         >
             {tags?.map((tag, index) => (
                 <Tag

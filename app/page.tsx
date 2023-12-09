@@ -21,7 +21,7 @@ const Home = () => {
     >
         <Header />
         <main
-            className='w-full p-5 pt-16 space-y-4 max-w-7xl'
+            className=' w-full p-5 pt-16 space-y-4 max-w-7xl bg-[url("/grid.svg")] bg-no-repeat bg-center bg-cover'
         >
             <p
                 className='w-full px-2 text-left text-lg font-semibold dark:text-[#eee]'
@@ -29,49 +29,55 @@ const Home = () => {
                 All courses
             </p>
             <div className='w-full max-sm:justify-center max-lg:justify-center flex'>
-                <div className="w-fit grid grid-cols-5 max-sm:grid-cols-1 max-md:grid-cols-3 max-lg:grid-cols-4">
+                <div className="w-fit grid grid-cols-4 max-sm:grid-cols-1 max-md:grid-cols-3 max-lg:grid-cols-4">
                     <CourseCard
-                        courseCode='CPE101'
-                        courseName='Introduction to Computer Science'
+                        courseCode='CENG291'
+                        courseName='Engineering in Society'
                         lecturerName='Dr. John Doe'
                         tags={['Computer Engineering', 'Computer Science']}
                     />
                     <CourseCard
-                        courseCode='CPE102'
-                        courseName='Data Structures and Algorithms'
+                        courseCode='COE291'
+                        courseName='Computer Engineering Lab I'
                         lecturerName='Prof. Jane Smith'
                         tags={['Computer Science', 'Programming']}
                     />
                     <CourseCard
-                        courseCode='CPE103'
-                        courseName='Web Development Fundamentals'
+                        courseCode='COE281'
+                        courseName='Programming and Problem Solving'
                         lecturerName='Dr. Michael Johnson'
-                        tags={['Web Development', 'Frontend', 'Backend', 'HTML', 'CSS', 'JavaScript']}
+                        tags={['Web Development', 'C Programming', 'Backend', 'Algorithms', 'Searching', 'Sorting']}
                     />
                     <CourseCard
-                        courseCode='CPE104'
-                        courseName='Machine Learning Basics'
+                        courseCode='COE253'
+                        courseName='Discrete Structures'
                         lecturerName='Dr. Emily Brown'
                         tags={['Artificial Intelligence', 'Data Science']}
                     />
                     <CourseCard
-                        courseCode='CPE105'
-                        courseName='Database Management Systems'
+                        courseCode='MATH251'
+                        courseName='Differential Equations'
                         lecturerName='Prof. David Lee'
                         tags={['Database Design', 'SQL']}
                     />
                     <CourseCard
-                        courseCode='CPE106'
-                        courseName='Software Engineering Principles'
+                        courseCode='COE261'
+                        courseName='Communication Systems'
                         lecturerName='Dr. Samantha White'
                         tags={['Software Development', 'Project Management']}
                     />
                     <CourseCard
-                        courseCode='CPE107'
-                        courseName='Cybersecurity Fundamentals'
+                        courseCode='COE271'
+                        courseName='Semiconductor Devices'
                         lecturerName='Prof. Alex Rodriguez'
                         tags={['Network Security', 'Information Systems']}
-/>
+                    />
+                    <CourseCard
+                        courseCode='ECON151'
+                        courseName='Elements of Economics I'
+                        lecturerName='Prof. Alex Rodriguez'
+                        tags={['Network Security', 'Information Systems']}
+                    />
 
                 </div>
 
