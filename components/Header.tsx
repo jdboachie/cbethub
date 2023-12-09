@@ -21,7 +21,7 @@ const Header = () => {
         <nav
             className='fixed top-0 flex backdrop-blur justify-between w-full p-4 border-b dark:border-b-[#333]'
         >
-            <p className={`text-2xl font-semibold ${silkscreen.className} bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text`}>
+            <p className={`text-xl font-semibold ${silkscreen.className} bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text`}>
                 CBET HUB
             </p>
             <div className='flex space-x-2'>

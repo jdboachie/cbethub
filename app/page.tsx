@@ -21,7 +21,7 @@ const Home = () => {
     >
         <Header />
         <main
-            className=' w-full p-5 pt-16 space-y-4 max-w-7xl bg-[url("/grid.svg")] bg-no-repeat bg-center bg-cover'
+            className=' w-full p-5 pt-16 space-y-4 max-w-7xl bg-[url("/public/grid.svg")] bg-no-repeat bg-center bg-cover'
         >
             <p
                 className='w-full px-2 text-left text-lg font-semibold dark:text-[#eee]'

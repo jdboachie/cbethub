@@ -4,7 +4,7 @@
 const Tag = ({tag}: {tag?:string}) => {
   return (
     <div
-        className='border dark:border-[#333] bg-white dark:text-[#eee] rounded-full w-fit py-0.5 px-1.5 text-xs max-sm:text-[0.6rem]
+        className='bg-transparent border dark:text-[#eee] rounded-full w-fit py-0.5 px-2 text-xs max-sm:text-[0.6rem]
         transition duration-300 ease-in-out'
     >
         {/*This will contain a link to a page that will show all courses and files with the tag*/}
