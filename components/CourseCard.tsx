@@ -23,7 +23,7 @@ const CourseCard = (
                    transition duration-300 ease-in-out'
         href={'/course/' + courseCode?.toLowerCase()}
     >
-        <p className="font-mono text-xs text-gray-500">{courseCode}</p>
+        <p className="font-mono text-xs text-gray-500 dark:text-gray-400">{courseCode}</p>
         <p
             className={`text-left pt-2 max-sm:text-md font-bold text-lg card-text-gradient`}
         >

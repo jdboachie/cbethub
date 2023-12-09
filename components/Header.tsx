@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import { oswald, silkscreen } from '@/lib/fonts'
+import { silkscreen } from '@/lib/fonts'
 
 import {
     Bars3Icon,
     MagnifyingGlassIcon,
     XMarkIcon,
 } from '@heroicons/react/20/solid'
-import DropDownMenu from '@/components/DropDownMenu'
+import Menu from '@/components/Menu'
 
 
 const Header = () => {
@@ -41,7 +41,7 @@ const Header = () => {
                 )}
             </div>
         </nav>
-        {showMainMenu && <DropDownMenu />}
+        {showMainMenu && <Menu />}
     </>
   )
 }

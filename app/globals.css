@@ -38,3 +38,18 @@ body {
 .dark-blue-gradient {
   @apply bg-gradient-to-r from-[#0a369d] to-pacificblue-100 text-transparent bg-clip-text
 }
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.animate-shimmer {
+  background: linear-gradient(to right, #f0f0f0 4%, #e0e0e0 25%, #f0f0f0 36%);
+  background-size: 1000px 100%;
+  animation: shimmer 1.5s infinite linear;
+}
