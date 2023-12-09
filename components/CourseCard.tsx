@@ -19,13 +19,13 @@ const CourseCard = (
   return (
     <Link
         className='border rounded-lg dark:border-[#333] w-50 h-fit p-3 justify-end items-start flex flex-col space-y-2 m-1.5 cursor-pointer
-                   hover:shadow-xl hover:scale-105 card-gradient
+                   hover:shadow-xl hover:scale-105 dark:bg-black
                    transition duration-300 ease-in-out'
         href={'/course/' + courseCode?.toLowerCase()}
     >
         <p className="font-mono text-xs text-gray-500">{courseCode}</p>
         <p
-            className={`text-left pt-2 max-sm:text-md font-bold dark:text-[#eee] text-lg card-text-gradient`}
+            className={`text-left pt-2 max-sm:text-md font-bold text-lg card-text-gradient`}
         >
             {courseName}
         </p>
