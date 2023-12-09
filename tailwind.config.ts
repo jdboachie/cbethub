@@ -9,20 +9,20 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        red: {
-          '600': '#E63946',
+        midnightblue: {
+          '100': '#03045E',
         },
-        gray: {
-          '50': '#F1FAEE',
+        starcommandblue: {
+          '100': '#0077B6',
         },
-        teal: {
-          '300': '#A8DADC',
+        pacificblue: {
+          '100': '#00B4D8',
         },
-        blue: {
-          '600': '#457B9D',
+        middleblue: {
+          '100': '#90E0EF',
         },
-        indigo: {
-          '900': '#1D3557',
+        lightcyan: {
+          '100': '#CAF0F8',
         },
       },
       fontFamily: {
