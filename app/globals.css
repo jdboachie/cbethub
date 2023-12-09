@@ -20,15 +20,19 @@
 
 body {
   height: 100vh;
-  @apply bg-[#EDF2F4]
+  @apply bg-white
 }
 
 .secondary-text {
   @apply text-[#8D99AE]
 }
 
-.red-gradient {
-  @apply bg-gradient-to-r from-[#D90429] to-[#EF233C] text-transparent bg-clip-text
+.card-gradient {
+  @apply bg-gradient-to-t from-[#FFFBFE] to-white
+}
+
+.card-text-gradient {
+  @apply bg-gradient-to-r from-black to-[#03045E] text-transparent bg-clip-text
 }
 .dark-blue-gradient {
   @apply bg-gradient-to-r from-midnightblue-100 to-pacificblue-100 text-transparent bg-clip-text
