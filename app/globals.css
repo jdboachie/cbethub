@@ -20,4 +20,9 @@
 
 body {
   height: 100vh;
+  @apply bg-white dark:bg-indigo-900
+}
+
+.red-gradient {
+  @apply bg-gradient-to-r from-red-600 to-red-900 text-transparent bg-clip-text
 }

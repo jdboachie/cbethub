@@ -18,11 +18,11 @@ const Home = () => {
   return (
     <div
         className="flex flex-col items-center justify-center w-full flex-1 text-center space-y-5
-                   bg-gray-50"
+                   "
     >
         <Header />
         <main
-            className=' w-full p-5 pt-16 space-y-4 max-w-6xl'
+            className=' w-full p-5 max-sm:p-3 pt-16 max-sm:pt-16 space-y-4 max-w-6xl'
         >
             <p
                 className='w-full px-2 text-left text-lg font-semibold dark:text-[#eee]'
