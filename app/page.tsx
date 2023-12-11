@@ -2,8 +2,8 @@
 
 import CourseCard from '@/components/CourseCard'
 import Footer from '@/components/Footer'
-import Header from '@/components/Header'
-import Search from '@/components/Search'
+import NavBar from '@/components/NavBar'
+import PageTitle from '@/components/PageTitle'
 
 import {
     ClockIcon,
@@ -20,16 +20,14 @@ const Home = () => {
         className="flex flex-col items-center justify-center w-full flex-1 text-center space-y-5
                    "
     >
-        <Header />
+        <NavBar />
         <main
-            className=' w-full p-5 max-sm:p-3 pt-16 max-sm:pt-16 space-y-4 max-w-6xl'
+            className=' w-full pt-16 max-sm:pt-[8em] space-y-4 max-w-6xl'
         >
-            <p
-                className='w-full px-2 text-left text-lg font-semibold text-midnightblue-100 dark:text-[#eee]'
-            >
-                All courses
-            </p>
-            <div className='w-full max-sm:justify-center max-lg:justify-center flex'>
+            <PageTitle
+                title='Account Settings'
+            />
+            <div className='w-full max-sm:justify-center max-lg:justify-center flex p-2'>
                 <div className="w-fit grid grid-cols-4 max-sm:grid-cols-1 max-md:grid-cols-3 max-lg:grid-cols-4">
                     <CourseCard
                         courseCode='CENG291'

@@ -10,8 +10,8 @@ const Menu = () => {
         >
             <div className='w-full p-3 space-y-3 text-gray-500 dark:text-[#eee] text-xs flex flex-col border-b dark:border-b-[#333] text-left
             '>
-                <div className="animate-shimmer rounded-full">
-                    <UserIcon className="p-6 m-4 border rounded-full text-gray-300 dark:text-gray-700" />
+                <div className="animate-shimmer border bg-gray-900 rounded-full">
+                    <UserIcon className="p-6 m-4 text-gray-300" />
                 </div>
                 <div className="">
                     <p className=''>Jude Boachie</p>

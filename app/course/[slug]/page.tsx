@@ -1,6 +1,6 @@
 'use client'
 
-import Header from "@/components/Header"
+import Header from "@/components/NavBar"
 
 const page = (
     {params}: {params: {slug:string}}

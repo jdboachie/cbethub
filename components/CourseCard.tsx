@@ -19,7 +19,7 @@ const CourseCard = (
   return (
     <Link
         className='border rounded-lg dark:border-[#333] w-50 h-fit p-3 justify-end items-start flex flex-col space-y-2 m-1.5 cursor-pointer
-                   hover:shadow-xl hover:scale-105 dark:bg-black
+                   hover:shadow-xl hover:scale-105 dark:bg-black bg-white
                    transition duration-300 ease-in-out'
         href={'/course/' + courseCode?.toLowerCase()}
     >
