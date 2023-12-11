@@ -7,15 +7,27 @@ import {
     UserIcon
 } from '@heroicons/react/24/solid'
 import Menu from '@/components/Menu'
+import NotificationArea from '@/components/NotificationArea'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 
 const NavBar = () => {
     const [showMainMenu, setShowMainMenu] = useState(false)
+    const [showNotificationArea, setShowNotificationArea] = useState(false)
 
     const handleMenuButtonClick = () => {
+        if (showNotificationArea) {
+            setShowNotificationArea(false)
+        }
         setShowMainMenu(!showMainMenu)
+    }
+
+    const handleBellButtonClick = () => {
+        if (showMainMenu) {
+            setShowMainMenu(false)
+        }
+        setShowNotificationArea(!showNotificationArea)
     }
 
     const currentPath = usePathname()
@@ -39,6 +51,7 @@ const NavBar = () => {
                     <div className='flex space-x-1'>
                         <BellIcon
                             className='w-9 h-9 rounded-full border dark:border-[#333] p-2 cursor-pointer text-gray-700 dark:text-[#eee]'
+                            onClick={handleBellButtonClick}
                         />
                         {showMainMenu ? (
                                 <XMarkIcon
@@ -80,6 +93,7 @@ const NavBar = () => {
             </div>
         </nav>
         {showMainMenu && <Menu />}
+        {showNotificationArea && <NotificationArea />}
     </>
   )
 }

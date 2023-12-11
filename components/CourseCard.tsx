@@ -29,14 +29,14 @@ const CourseCard = (
         onMouseLeave={() => setClicked(false)}
         href={'/course/' + courseCode?.toLowerCase()}
     >
-        <p className="font-mono text-xs text-gray-500 dark:text-gray-400">{courseCode}</p>
+        <p className="font-mono text-xs text-gray-500 dark:text-gray-300">{courseCode}</p>
         <p
             className={`text-left max-sm:text-md font-[500] card-text-gradient`}
         >
             {courseName}
         </p>
         <p
-            className='text-left pb-1 text-xs text-gray-500 dark:text-gray-400'
+            className='text-left pb-1 text-xs text-gray-500 dark:text-gray-300'
         >
             {lecturerName}
         </p>
