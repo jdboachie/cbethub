@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import { silkscreen } from '@/lib/fonts'
 
 import {
     Bars2Icon,
@@ -8,8 +7,8 @@ import {
     UserIcon
 } from '@heroicons/react/24/solid'
 import Menu from '@/components/Menu'
-import Search from '@/components/Search'
 import Link from 'next/link'
+import { usePathname } from 'next/navigation'
 
 
 const NavBar = () => {
@@ -19,6 +18,8 @@ const NavBar = () => {
         setShowMainMenu(!showMainMenu)
     }
 
+    const currentPath = usePathname()
+    console.log(currentPath)
   return (
       <>
         <nav
@@ -42,12 +43,12 @@ const NavBar = () => {
                         {showMainMenu ? (
                                 <XMarkIcon
                                     className='w-9 h-9 rounded-full border dark:border-[#333] p-2 cursor-pointer text-gray-700 dark:text-[#eee]'
-                                    onMouseOver={() => setShowMainMenu(false)}
+                                    onClick={handleMenuButtonClick}
                                 />
                             ): (
                                 <Bars2Icon
                                     className='w-9 h-9 rounded-full border dark:border-[#333] p-2 cursor-pointer text-gray-700 dark:text-[#eee]'
-                                    onMouseOver={() => setShowMainMenu(true)}
+                                    onClick={handleMenuButtonClick}
                                 />
                         )}
                     </div>
@@ -57,22 +58,22 @@ const NavBar = () => {
                 <ul className='flex space-x-1'>
                 <Link
                         href={'/'}
-                        className='p-3 rounded-lg border text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full'>
-                        Files
+                        className={`${currentPath === '/' && 'bg-gray-100 border'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full`}>
+                        Courses
                     </Link>
                     <Link
                         href={'/account'}
-                        className='p-3 rounded-lg text-left text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full'>
+                        className={`${currentPath === '/account' && 'bg-gray-100 border'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full`}>
                         Account
                     </Link>
                     <Link
-                        href={'/account/settings'}
-                        className='p-3 rounded-lg text-left text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full'>
+                        href={'/settings'}
+                        className={`${currentPath === '/settings' && 'bg-gray-100 border'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full`}>
                         Settings
                     </Link>
                     <Link
                         href={'/logout'}
-                        className=' p-3 rounded-lg text-left text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full'>
+                        className={`${currentPath === '/logout' && 'bg-gray-100 border'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full`}>
                         Logout
                     </Link>
                 </ul>

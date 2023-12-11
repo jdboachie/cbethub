@@ -1,12 +1,15 @@
 'use client'
 
 import NavBar from '@/components/NavBar'
-import React from 'react'
+import PageTitle from '@/components/PageTitle'
 
 const page = () => {
   return (
-    <div>
+    <div
+      className="flex flex-col pt-[8em] w-full"
+    >
         <NavBar />
+        <PageTitle title="Settings"/>
     </div>
   )
 }
