@@ -43,7 +43,7 @@ const NavBar = () => {
                     )}
                 </div>
             </div>
-            <div className='w-full p-3'>
+            <div className='w-full p-3 bg-white dark:bg-black border-b'>
                 <Search />
             </div>
         </nav>
