@@ -52,7 +52,7 @@ const NavBar = () => {
                         {showNotificationArea ? (
                             <XMarkIcon
                                 className='w-9 h-9 rounded-full border dark:border-red-600 p-2 cursor-pointer text-gray-700 dark:text-red-600'
-                                onClick={handleMenuButtonClick}
+                                onClick={handleBellButtonClick}
                             />
                             ):(
                                 <BellIcon
