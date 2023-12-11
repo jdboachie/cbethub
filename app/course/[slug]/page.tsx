@@ -2,22 +2,23 @@
 
 import NavBar from "@/components/NavBar"
 import PageTitle from "@/components/PageTitle"
+import CourseCardSkeleton from "@/components/skeletons/CourseCardSkeleton"
 
 const page = (
     {params}: {params: {slug:string}}
 ) => {
   return (
     <div
-        className="flex flex-col items-center justify-center w-full flex-1 text-center space-y-5"
+        className="flex flex-col w-full"
     >
         <NavBar />
-        <PageTitle title="Account"/>
         <main
-            className='w-full pt-16 max-sm:pt-[8em] space-y-4 max-w-7xl'
+            className='w-full pt-[8em] space-y-4 max-w-6xl'
         >
             <PageTitle
                 title={params.slug.toUpperCase()}
             />
+            {/* <CourseCardSkeleton /> */}
         </main>
     </div>
   )

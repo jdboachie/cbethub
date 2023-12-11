@@ -54,7 +54,7 @@ const NavBar = () => {
                     </div>
                 </div>
             </div>
-            <div className='w-full p-3 bg-white dark:bg-black border-b'>
+            <div className='w-full p-3 bg-white dark:bg-black border-b text-center'>
                 <ul className='flex space-x-1'>
                 <Link
                         href={'/'}

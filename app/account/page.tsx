@@ -7,7 +7,7 @@ import React from 'react'
 const page = () => {
   return (
     <div
-      className="flex flex-col pt-[8em] w-full"
+      className="flex flex-col pt-[8em] w-full space-y-5"
     >
         <NavBar />
         <PageTitle title="Account"/>

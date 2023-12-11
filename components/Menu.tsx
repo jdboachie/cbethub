@@ -5,11 +5,8 @@ import PageTitle from './PageTitle'
 
 const Menu = () => {
   return (
-    <div className='fixed h-screen w-screen top-0 p-4 bg-white dark:bg-black dark:border-t-[#333]'>
-        <div>
-            {/* The Actual Menu here */}
-            <PageTitle title='Menu' />
-        </div>
+    <div className='fixed h-screen w-screen top-0 space-y-4 pt-[8em] bg-white dark:bg-black dark:border-t-[#333]'>
+        <PageTitle title='Menu' />
     </div>
   )
 }

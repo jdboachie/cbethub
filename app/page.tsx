@@ -1,5 +1,6 @@
 'use client'
 
+import CourseCardSkeleton from '@/components/skeletons/CourseCardSkeleton'
 import CourseCard from '@/components/CourseCard'
 import Footer from '@/components/Footer'
 import NavBar from '@/components/NavBar'
@@ -77,7 +78,9 @@ const Home = () => {
                         lecturerName='Prof. Alex Rodriguez'
                         tags={['Network Security', 'Information Systems']}
                     />
-
+                    <CourseCardSkeleton />
+                    <CourseCardSkeleton />
+                    <CourseCardSkeleton />
                 </div>
 
             </div>
@@ -101,7 +104,6 @@ const Home = () => {
                 <p className='text-xs text-gray-500 px-2 flex'>23 files</p>
             </div>
         </div> */}
-        <Footer />
     </div>
   )
 }
