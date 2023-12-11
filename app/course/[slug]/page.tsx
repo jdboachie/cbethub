@@ -12,11 +12,10 @@ const page = (
 ) => {
 
     const courseData = fetchCourseById(params.slug)
-    console.log(courseData)
 
   return (
     <div
-        className="flex flex-col w-full"
+        className="flex flex-col w-full justify-center items-center"
     >
         <NavBar />
         <main
