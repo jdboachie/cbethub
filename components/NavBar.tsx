@@ -51,7 +51,7 @@ const NavBar = () => {
                     <div className='flex space-x-1'>
                         {showNotificationArea ? (
                             <XMarkIcon
-                                className='w-9 h-9 rounded-full border dark:border-red-900 bg-red-500 p-2 cursor-pointer text-gray-700 dark:text-red-900'
+                                className='w-9 h-9 rounded-full border border-red-600 dark:border-red-900 bg-red-300 dark:bg-red-500 p-2 cursor-pointer text-red-700 dark:text-red-900'
                                 onClick={handleBellButtonClick}
                             />
                             ):(
@@ -62,7 +62,7 @@ const NavBar = () => {
                         )}
                         {showMainMenu ? (
                                 <XMarkIcon
-                                    className='w-9 h-9 rounded-full border dark:border-red-900 bg-red-500 p-2 cursor-pointer text-gray-700 dark:text-red-900'
+                                    className='w-9 h-9 rounded-full border border-red-600 dark:border-red-900 bg-red-300 dark:bg-red-500 p-2 cursor-pointer text-red-700 dark:text-red-900'
                                     onClick={handleMenuButtonClick}
                                 />
                             ): (

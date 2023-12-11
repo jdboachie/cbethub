@@ -23,7 +23,7 @@ const Home = () => {
     >
         <NavBar />
         <main
-            className=' w-full pt-[8em] space-y-4 max-w-6xl'
+            className=' w-full pt-[7em] space-y-4 max-w-6xl'
         >
             <PageTitle
                 title='All Courses'
