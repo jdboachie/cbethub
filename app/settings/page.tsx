@@ -30,17 +30,17 @@ const page = () => {
       <div
         className='h-fit p-3'
       >
-        <ul className='flex flex-col space-y-3 border rounded-lg p-2 text-xs bg-white dark:bg-[#111]'>
+        <ul className='flex flex-col space-y-3 border dark:border-[#333] rounded-lg p-2 text-xs dark:text-[#eee] bg-white dark:bg-[#111]'>
           <li className='rounded-lg'>
             <p className='p-1'>Name</p>
             <input type="text" name="name" id="name" placeholder='Jude Boachie'
-              className='border-none focus:border px-1 py-2 w-full text-gray-500'/>
+              className='border-none bg-inherit focus:border px-1 py-2 w-full text-gray-500'/>
           </li>
 
           <li className='rounded-lg'>
             <p className='p-1'>Email</p>
             <input type="email" name="email" id="email" placeholder='judeboachiekwame@gmail.com'
-              className='px-1 py-2 w-full text-gray-500 border-none focus:border'/>
+              className='px-1 py-2 w-full bg-inherit text-gray-500 border-none focus:border'/>
           </li>
         </ul>
       </div>
