@@ -30,7 +30,7 @@ const NavBar = () => {
                         <div className="w-9 h-9 p-2 animate-shimmer border bg-gray-900 rounded-full">
                             <UserIcon className="text-gray-300" />
                         </div>
-                        <p className='p-0 w-fit'>
+                        <p className='p-0.5 w-fit'>
                             Jude Boachie <br/>
                             judeboachiekwame@gmail.com
                         </p>
