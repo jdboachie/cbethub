@@ -5,7 +5,8 @@ import {
     Bars2Icon,
     BellIcon,
     XMarkIcon,
-} from '@heroicons/react/24/outline'
+    UserIcon
+} from '@heroicons/react/24/solid'
 import Menu from '@/components/Menu'
 import Search from '@/components/Search'
 import Link from 'next/link'
@@ -24,10 +25,15 @@ const NavBar = () => {
             className='fixed top-0 z-50 flex flex-col justify-between w-full dark:border-b-[#333]'
         >
             <div className='flex w-full justify-between bg-white p-4 '>
-                <div className='flex justify-between space-x-2 w-full'>
-                    <div className='p-1.5 text-xs text-left text-gray-700'>
-                        Jude Boachie
-                        judeboachiekwame@gmail.com
+                <div className='flex justify-between space-x-1 w-full'>
+                    <div className='space-x-1 flex text-xs text-left text-gray-700'>
+                        <div className="w-9 h-9 p-2 animate-shimmer border bg-gray-900 rounded-full">
+                            <UserIcon className="text-gray-300" />
+                        </div>
+                        <p className='p-0 w-fit'>
+                            Jude Boachie <br/>
+                            judeboachiekwame@gmail.com
+                        </p>
                     </div>
                     <div className='flex space-x-1'>
                         <BellIcon
@@ -51,22 +57,22 @@ const NavBar = () => {
                 <ul className='flex space-x-1'>
                 <Link
                         href={'/'}
-                        className='flex space-x-1 p-3 rounded-lg border text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full'>
+                        className='p-3 rounded-lg border text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full'>
                         Files
                     </Link>
                     <Link
                         href={'/account'}
-                        className='flex space-x-1 p-3 rounded-lg text-left text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full'>
+                        className='p-3 rounded-lg text-left text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full'>
                         Account
                     </Link>
                     <Link
                         href={'/account/settings'}
-                        className='flex space-x-1 p-3 rounded-lg text-left text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full'>
+                        className='p-3 rounded-lg text-left text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full'>
                         Settings
                     </Link>
                     <Link
                         href={'/logout'}
-                        className='flex space-x-1 p-3 rounded-lg text-left text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full'>
+                        className=' p-3 rounded-lg text-left text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full'>
                         Logout
                     </Link>
                 </ul>

@@ -25,7 +25,7 @@ const Home = () => {
             className=' w-full pt-16 max-sm:pt-[8em] space-y-4 max-w-6xl'
         >
             <PageTitle
-                title='Account Settings'
+                title='All Courses'
             />
             <div className='w-full max-sm:justify-center max-lg:justify-center flex p-2'>
                 <div className="w-fit grid grid-cols-4 max-sm:grid-cols-1 max-md:grid-cols-3 max-lg:grid-cols-4">

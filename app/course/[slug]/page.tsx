@@ -1,6 +1,7 @@
 'use client'
 
 import Header from "@/components/NavBar"
+import PageTitle from "@/components/PageTitle"
 
 const page = (
     {params}: {params: {slug:string}}
@@ -11,13 +12,11 @@ const page = (
     >
         <Header />
         <main
-            className='w-full p-5 pt-16 space-y-4 max-w-7xl'
+            className='w-full pt-16 max-sm:pt-[8em] space-y-4 max-w-7xl'
         >
-            <p
-                className='w-full px-2 text-left text-lg font-semibold dark:text-[#eee]'
-            >
-                {params.slug.toUpperCase()}
-            </p>
+            <PageTitle
+                title={params.slug.toUpperCase()}
+            />
         </main>
     </div>
   )
