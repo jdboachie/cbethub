@@ -81,6 +81,7 @@ const Home = () => {
                     <CourseCardSkeleton />
                     <CourseCardSkeleton />
                     <CourseCardSkeleton />
+                    <CourseCardSkeleton />
                 </div>
 
             </div>
