@@ -42,12 +42,12 @@ const NavBar = () => {
                         {showMainMenu ? (
                                 <XMarkIcon
                                     className='w-9 h-9 rounded-full border dark:border-[#333] p-2 cursor-pointer text-gray-700 dark:text-[#eee]'
-                                    onClick={handleMenuButtonClick}
+                                    onMouseOver={() => setShowMainMenu(false)}
                                 />
                             ): (
                                 <Bars2Icon
                                     className='w-9 h-9 rounded-full border dark:border-[#333] p-2 cursor-pointer text-gray-700 dark:text-[#eee]'
-                                    onClick={handleMenuButtonClick}
+                                    onMouseOver={() => setShowMainMenu(true)}
                                 />
                         )}
                     </div>
