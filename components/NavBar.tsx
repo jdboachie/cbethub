@@ -28,7 +28,7 @@ const NavBar = () => {
             <div className='flex w-full justify-between p-4 '>
                 <div className='flex justify-between space-x-1 w-full'>
                     <div className='space-x-1 flex text-xs text-left text-gray-700'>
-                        <div className="w-9 h-9 p-2 animate-shimmer border rounded-full">
+                        <div className="w-9 h-9 p-2 animate-pulse border dark:border-[#333] rounded-full">
                             <UserIcon className="text-gray-300 " />
                         </div>
                         <p className='p-0.5 w-fit dark:text-[#eee]'>
