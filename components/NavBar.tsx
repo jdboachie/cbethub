@@ -49,13 +49,20 @@ const NavBar = () => {
                         </p>
                     </div>
                     <div className='flex space-x-1'>
-                        <BellIcon
-                            className='w-9 h-9 rounded-full border dark:border-[#333] p-2 cursor-pointer text-gray-700 dark:text-[#eee]'
-                            onClick={handleBellButtonClick}
-                        />
+                        {showNotificationArea ? (
+                            <XMarkIcon
+                                className='w-9 h-9 rounded-full border dark:border-red-600 p-2 cursor-pointer text-gray-700 dark:text-red-600'
+                                onClick={handleMenuButtonClick}
+                            />
+                            ):(
+                                <BellIcon
+                                    className='w-9 h-9 rounded-full border dark:border-[#333] p-2 cursor-pointer text-gray-700 dark:text-[#eee]'
+                                    onClick={handleBellButtonClick}
+                                />
+                        )}
                         {showMainMenu ? (
                                 <XMarkIcon
-                                    className='w-9 h-9 rounded-full border dark:border-[#333] p-2 cursor-pointer text-gray-700 dark:text-[#eee]'
+                                    className='w-9 h-9 rounded-full border dark:border-red-600 p-2 cursor-pointer text-gray-700 dark:text-red-600'
                                     onClick={handleMenuButtonClick}
                                 />
                             ): (
