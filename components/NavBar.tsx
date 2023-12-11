@@ -58,22 +58,22 @@ const NavBar = () => {
                 <ul className='flex space-x-1'>
                 <Link
                         href={'/'}
-                        className={`${currentPath === '/' && 'bg-gray-100 border'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full`}>
+                        className={`${currentPath === '/' && 'bg-gray-100'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full`}>
                         Courses
                     </Link>
                     <Link
                         href={'/account'}
-                        className={`${currentPath === '/account' && 'bg-gray-100 border'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full`}>
+                        className={`${currentPath === '/account' && 'bg-gray-100'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full`}>
                         Account
                     </Link>
                     <Link
                         href={'/settings'}
-                        className={`${currentPath === '/settings' && 'bg-gray-100 border'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full`}>
+                        className={`${currentPath === '/settings' && 'bg-gray-100'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full`}>
                         Settings
                     </Link>
                     <Link
                         href={'/logout'}
-                        className={`${currentPath === '/logout' && 'bg-gray-100 border'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full`}>
+                        className={`${currentPath === '/logout' && 'bg-gray-100'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-[#111] w-full`}>
                         Logout
                     </Link>
                 </ul>
