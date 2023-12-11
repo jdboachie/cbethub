@@ -2,19 +2,16 @@
 
 import CourseCardSkeleton from '@/components/skeletons/CourseCardSkeleton'
 import CourseCard from '@/components/CourseCard'
-import Footer from '@/components/Footer'
 import NavBar from '@/components/NavBar'
 import PageTitle from '@/components/PageTitle'
 
-import {
-    ClockIcon,
-    BookmarkIcon,
-} from '@heroicons/react/24/solid'
-import Link from 'next/link'
+import { fetchCourses } from '@/lib/_data'
 
 
 
 const Home = () => {
+
+    const courseData = fetchCourses()
 
   return (
     <div
@@ -28,64 +25,21 @@ const Home = () => {
             <PageTitle
                 title='All Courses'
             />
-            <div className='w-full max-sm:justify-center max-lg:justify-center flex p-2'>
-                <div className="w-fit grid grid-cols-4 max-sm:grid-cols-1 max-md:grid-cols-3 max-lg:grid-cols-4">
+            <div className="px-4 grid grid-cols-4 max-sm:grid-cols-1 max-md:grid-cols-3 max-lg:grid-cols-4">
+                {courseData.map((course) => (
                     <CourseCard
-                        courseCode='CENG291'
-                        courseName='Engineering in Society'
-                        lecturerName='Dr. John Doe'
-                        tags={['Computer Engineering', 'Computer Science']}
+                        key={course.courseCode}
+                        courseCode={course.courseCode}
+                        courseName={course.courseName}
+                        lecturerName={course.lecturerName}
+                        tags={course.tags}
                     />
-                    <CourseCard
-                        courseCode='COE291'
-                        courseName='Computer Engineering Lab I'
-                        lecturerName='Prof. Jane Smith'
-                        tags={['Computer Science', 'Programming']}
-                    />
-                    <CourseCard
-                        courseCode='COE281'
-                        courseName='Programming and Problem Solving'
-                        lecturerName='Dr. Michael Johnson'
-                        tags={['Web Development', 'C Programming', 'Backend', 'Algorithms', 'Searching', 'Sorting']}
-                    />
-                    <CourseCard
-                        courseCode='COE253'
-                        courseName='Discrete Structures'
-                        lecturerName='Dr. Emily Brown'
-                        tags={['Artificial Intelligence', 'Data Science']}
-                    />
-                    <CourseCard
-                        courseCode='MATH251'
-                        courseName='Differential Equations'
-                        lecturerName='Prof. David Lee'
-                        tags={['Database Design', 'SQL']}
-                    />
-                    <CourseCard
-                        courseCode='COE261'
-                        courseName='Communication Systems'
-                        lecturerName='Dr. Samantha White'
-                        tags={['Software Development', 'Project Management']}
-                    />
-                    <CourseCard
-                        courseCode='COE271'
-                        courseName='Semiconductor Devices'
-                        lecturerName='Prof. Alex Rodriguez'
-                        tags={['Network Security', 'Information Systems']}
-                    />
-                    <CourseCard
-                        courseCode='ECON151'
-                        courseName='Elements of Economics I'
-                        lecturerName='Prof. Alex Rodriguez'
-                        tags={['Network Security', 'Information Systems']}
-                    />
-                    <CourseCardSkeleton />
-                    <CourseCardSkeleton />
-                    <CourseCardSkeleton />
-                    <CourseCardSkeleton />
-                </div>
-
+                ))}
+                <CourseCardSkeleton />
+                <CourseCardSkeleton />
+                <CourseCardSkeleton />
+                <CourseCardSkeleton />
             </div>
-
         </main>
 
 
