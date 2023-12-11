@@ -40,7 +40,7 @@ const NavBar = () => {
             <div className='flex w-full justify-between p-4 '>
                 <div className='flex justify-between space-x-1 w-full'>
                     <Link
-                        href={'/files'}
+                        href={'/settings'}
                         className='space-x-1 p-1 flex text-xs text-left text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-blue-900'
                     >
                         <div className="w-9 h-9 p-2 animate-pulse border dark:border-[#333] rounded-full">
