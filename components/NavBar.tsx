@@ -31,24 +31,29 @@ const NavBar = () => {
     }
 
     const currentPath = usePathname()
-    console.log(currentPath)
-  return (
+
+    return (
       <>
         <nav
             className='fixed top-0 z-50 flex flex-col justify-between w-full dark:text-[#eee] bg-white dark:bg-[#111]'
         >
             <div className='flex w-full justify-between p-4 '>
                 <div className='flex justify-between space-x-1 w-full'>
-                    <div className='space-x-1 flex text-xs text-left text-gray-700'>
+                    <Link
+                        href={'/files'}
+                        className='space-x-1 p-1 flex text-xs text-left text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-blue-900'
+                    >
                         <div className="w-9 h-9 p-2 animate-pulse border dark:border-[#333] rounded-full">
                             <UserIcon className="text-gray-300 " />
                         </div>
-                        <p className='p-0.5 w-fit dark:text-[#eee]'>
+                        <p
+                            className='p-0.5 w-fit dark:text-[#eee]'
+                            >
                             Jude Boachie <br/>
                             judeboachiekwame@gmail.com
                         </p>
-                    </div>
-                    <div className='flex space-x-1'>
+                    </Link>
+                    <div className='flex space-x-1 p-1'>
                         {showNotificationArea ? (
                             <XMarkIcon
                                 className='w-9 h-9 rounded-full border border-red-600 dark:border-red-900 bg-red-300 dark:bg-red-500 p-2 cursor-pointer text-red-700 dark:text-red-900'
@@ -82,9 +87,9 @@ const NavBar = () => {
                         Courses
                     </Link>
                     <Link
-                        href={'/account'}
-                        className={`${currentPath === '/account' && 'bg-gray-100 dark:bg-blue-800'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
-                        Account
+                        href={'/files'}
+                        className={`${currentPath === '/files' && 'bg-gray-100 dark:bg-blue-800'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
+                        Files
                     </Link>
                     <Link
                         href={'/settings'}
