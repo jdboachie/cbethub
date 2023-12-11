@@ -1,5 +1,7 @@
 'use client'
 
+import { useState } from "react"
+
 import Link from "next/link"
 import Tag from "./Tag"
 
@@ -16,12 +18,14 @@ const CourseCard = (
         tags?: string[],
     }
 ) => {
+    const [clicked, setClicked] = useState(false)
   return (
     <div
-        className='border rounded-lg dark:border-[#333] w-50 h-fit p-3 justify-end items-start flex flex-col space-y-2 m-1.5 cursor-pointer
-                   hover:shadow-xl hover:scale-105 dark:bg-black bg-white
-                   transition duration-300 ease-in-out'
-        onClick={() => console.log('clicked')}
+        className={`border rounded-lg dark:border-[#333] w-50 h-fit p-3 justify-end items-start flex flex-col space-y-2 m-1.5 cursor-pointer
+                   hover:shadow-xl active:bg-transparent dark:bg-black bg-white
+                   transition duration-300 ease-in-out ${clicked ? 'shadow-xl scale-105' : ''}`}
+        onMouseOver={() => setClicked(true)}
+        onMouseLeave={() => setClicked(false)}
         // href={'/course/' + courseCode?.toLowerCase()}
     >
         <p className="font-mono text-xs text-gray-500 dark:text-gray-400">{courseCode}</p>
