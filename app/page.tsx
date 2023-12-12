@@ -1,5 +1,7 @@
 'use client'
 
+import { useState } from 'react'
+
 import Search from '@/components/Search'
 import NavBar from '@/components/NavBar'
 import PageTitle from '@/components/PageTitle'
@@ -15,12 +17,13 @@ import { RectangleGroupIcon, RectangleStackIcon, FunnelIcon } from '@heroicons/r
 
 const Home = () => {
 
+    const [view , setView] = useState<'grid' | 'list'>('list')
+
     const courseData = fetchCourses()
 
   return (
     <div
-        className="flex flex-col items-center justify-center w-full flex-1 text-center space-y-5
-                   "
+        className="flex flex-col items-center justify-center w-full flex-1 text-center space-y-5"
     >
         <NavBar />
         <main
@@ -30,16 +33,23 @@ const Home = () => {
                 title='All Courses'
             />
             <div
-                className='my-0 mx-2 flex space-x-2'
+                className='my-0 mx-2 flex space-x-1'
             >
                 <Search
-                    className=''
+                    className='w-5/6'
                 />
-                <RectangleGroupIcon className='w-10 h-10 border dark:border-[#333] rounded-lg p-2 bg-white dark:bg-[#111] dark:text-[#eee]' />
-                {/* <RectangleStackIcon className='w-10 h-10' /> */}
+                {view === 'list' ? (
+                    <RectangleGroupIcon
+                        onClick={() => setView('grid')}
+                        className='cursor-pointer w-10 h-10 border dark:border-[#333] rounded-lg p-2 bg-white dark:bg-[#111] dark:text-[#eee]' />
+                ) : (
+                    <RectangleStackIcon
+                        onClick={() => setView('list')}
+                        className='cursor-pointer w-10 h-10 border dark:border-[#333] rounded-lg p-2 bg-white dark:bg-[#111] dark:text-[#eee]' />
+                )}
                 <FunnelIcon className='w-10 h-10 border dark:border-[#333] rounded-lg p-2 bg-white dark:bg-[#111] dark:text-[#eee]' />
             </div>
-            <div className="w-full p-2 space-y-2 space-x-2 max-sm:space-x-0 grid grid-cols-4 max-sm:grid-cols-1 max-md:grid-cols-3 max-lg:grid-cols-4">
+            <div className={`w-full p-2 space-y-2 space-x-2 max-sm:space-x-0 grid grid-cols-4 max-sm:grid-cols-1 ${ view === 'grid' && 'max-sm:grid-cols-2 max-sm:space-x-1 max-sm:space-y-1' } max-md:grid-cols-3 max-lg:grid-cols-4`}>
                 {courseData.map((course) => (
                     <CourseCard
                         key={course.courseCode}
