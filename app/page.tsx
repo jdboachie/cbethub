@@ -27,7 +27,7 @@ const Home = () => {
                 title='All Courses'
             />
             <div
-                classN
+                className='border'
             >
                 <Search
                     className='my-0 mx-1.5'
