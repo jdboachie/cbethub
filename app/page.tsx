@@ -26,9 +26,14 @@ const Home = () => {
             <PageTitle
                 title='All Courses'
             />
-            <Search
-                className='my-0 mx-1.5'
-            />
+            <div
+                classN
+            >
+                <Search
+                    className='my-0 mx-1.5'
+                />
+
+            </div>
             <div className="w-full p-2 space-y-2 space-x-2 max-sm:space-x-0 grid grid-cols-4 max-sm:grid-cols-1 max-md:grid-cols-3 max-lg:grid-cols-4">
                 {courseData.map((course) => (
                     <CourseCard

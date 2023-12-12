@@ -16,7 +16,7 @@ import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 
 
-const NavBar = () => {
+const NavBar = ({ isForCourseView }: {isForCourseView?: boolean}) => {
     // const [showMainMenu, setShowMainMenu] = useState(false)
     const [showSearchBar, setShowSearchBar] = useState(false)
     const [showNotificationArea, setShowNotificationArea] = useState(false)
@@ -93,9 +93,9 @@ const NavBar = () => {
             </div>
             <div className='w-full px-4 py-2 border-b dark:border-b-[#333] text-center'>
                 <ul className='flex space-x-1'>
-                <Link
+                    <Link
                         href={'/'}
-                        className={`${currentPath === '/' && 'bg-gray-100 dark:bg-blue-800'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
+                        className={`${(currentPath === '/' || isForCourseView) && 'bg-gray-100 dark:bg-blue-800'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
                         Courses
                     </Link>
                     <Link

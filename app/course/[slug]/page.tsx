@@ -17,7 +17,7 @@ const page = (
     <div
         className="flex flex-col w-full justify-center items-center"
     >
-        <NavBar />
+        <NavBar isForCourseView />
         <main
             className='w-full pt-[8em] space-y-4 max-w-6xl'
         >

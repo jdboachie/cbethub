@@ -15,7 +15,7 @@ const page = () => {
       className="flex flex-col pt-[7em] w-full space-y-5"
     >
       <NavBar />
-      <PageTitle title="My Files"/>
+      <PageTitle title="Blog"/>
     </div>
   )
 }
