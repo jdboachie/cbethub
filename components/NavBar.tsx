@@ -4,7 +4,10 @@ import {
     Bars2Icon,
     BellIcon,
     XMarkIcon,
-    UserIcon
+    UserIcon,
+    SunIcon,
+    MoonIcon,
+    ArrowRightOnRectangleIcon,
 } from '@heroicons/react/24/solid'
 import Menu from '@/components/Menu'
 import NotificationArea from '@/components/NotificationArea'
@@ -61,11 +64,18 @@ const NavBar = () => {
                             />
                             ):(
                                 <BellIcon
-                                    className='w-9 h-9 rounded-full border dark:border-[#333] p-2 cursor-pointer text-gray-700 dark:text-[#eee]'
+                                    className='w-9 h-9 rounded-full border dark:border-[#333] p-2 cursor-pointer dark:text-[#eee]'
                                     onClick={handleBellButtonClick}
                                 />
                         )}
-                        {showMainMenu ? (
+                        <div
+                            className='hover:bg-gray-100 dark:hover:bg-blue-900 w-fit'
+                        >
+                            <MoonIcon
+                                className='w-9 h-9 border p-2 rounded-full'
+                            />
+                        </div>
+                        {/* {showMainMenu ? (
                                 <XMarkIcon
                                     className='w-9 h-9 rounded-full border border-red-600 dark:border-red-900 bg-red-300 dark:bg-red-500 p-2 cursor-pointer text-red-700 dark:text-red-900'
                                     onClick={handleMenuButtonClick}
@@ -75,11 +85,11 @@ const NavBar = () => {
                                     className='w-9 h-9 rounded-full border dark:border-[#333] p-2 cursor-pointer text-gray-700 dark:text-[#eee]'
                                     onClick={handleMenuButtonClick}
                                 />
-                        )}
+                        )} */}
                     </div>
                 </div>
             </div>
-            <div className='w-full p-3 border-b dark:border-b-[#333] text-center'>
+            <div className='w-full px-4 py-2 border-b dark:border-b-[#333] text-center'>
                 <ul className='flex space-x-1'>
                 <Link
                         href={'/'}
@@ -96,11 +106,13 @@ const NavBar = () => {
                         className={`${currentPath === '/settings' && 'bg-gray-100 dark:bg-blue-800'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
                         Settings
                     </Link>
-                    <Link
+                    {/* <Link
                         href={'/logout'}
-                        className={`${currentPath === '/logout' && 'bg-gray-100 dark:bg-blue-800'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
-                        Logout
-                    </Link>
+                        className={`${currentPath === '/logout' && 'bg-gray-100 dark:bg-blue-800'} hover:bg-gray-100 dark:hover:bg-blue-900 w-fit`}>
+                        <ArrowRightOnRectangleIcon
+                            className='w-9 h-9 border p-2 rounded-full'
+                        />
+                    </Link> */}
                 </ul>
             </div>
         </nav>

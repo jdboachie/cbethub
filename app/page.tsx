@@ -1,9 +1,10 @@
 'use client'
 
-import CourseCardSkeleton from '@/components/skeletons/CourseCardSkeleton'
-import CourseCard from '@/components/CourseCard'
+import Search from '@/components/Search'
 import NavBar from '@/components/NavBar'
 import PageTitle from '@/components/PageTitle'
+import CourseCard from '@/components/CourseCard'
+import CourseCardSkeleton from '@/components/skeletons/CourseCardSkeleton'
 
 import { fetchCourses } from '@/lib/_data'
 
@@ -25,7 +26,10 @@ const Home = () => {
             <PageTitle
                 title='All Courses'
             />
-            <div className="px-4 grid grid-cols-4 max-sm:grid-cols-1 max-md:grid-cols-3 max-lg:grid-cols-4">
+            <Search
+                className='my-0 mx-1.5'
+            />
+            <div className="w-full p-2 space-y-2 space-x-2 max-sm:space-x-0 grid grid-cols-4 max-sm:grid-cols-1 max-md:grid-cols-3 max-lg:grid-cols-4">
                 {courseData.map((course) => (
                     <CourseCard
                         key={course.courseCode}
