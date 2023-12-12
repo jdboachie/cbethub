@@ -7,6 +7,7 @@ import {
     UserIcon,
     SunIcon,
     MoonIcon,
+    MagnifyingGlassIcon,
     ArrowRightOnRectangleIcon,
 } from '@heroicons/react/24/solid'
 import Menu from '@/components/Menu'
@@ -16,20 +17,21 @@ import { usePathname } from 'next/navigation'
 
 
 const NavBar = () => {
-    const [showMainMenu, setShowMainMenu] = useState(false)
+    // const [showMainMenu, setShowMainMenu] = useState(false)
+    const [showSearchBar, setShowSearchBar] = useState(false)
     const [showNotificationArea, setShowNotificationArea] = useState(false)
 
-    const handleMenuButtonClick = () => {
-        if (showNotificationArea) {
-            setShowNotificationArea(false)
-        }
-        setShowMainMenu(!showMainMenu)
-    }
+    // const handleMenuButtonClick = () => {
+    //     if (showNotificationArea) {
+    //         setShowNotificationArea(false)
+    //     }
+    //     setShowMainMenu(!showMainMenu)
+    // }
 
     const handleBellButtonClick = () => {
-        if (showMainMenu) {
-            setShowMainMenu(false)
-        }
+        // if (showMainMenu) {
+        //     setShowMainMenu(false)
+        // }
         setShowNotificationArea(!showNotificationArea)
     }
 
@@ -69,9 +71,9 @@ const NavBar = () => {
                                 />
                         )}
                         <div
-                            className='hover:bg-gray-100 dark:hover:bg-blue-900 w-fit'
+                            className='hover:bg-gray-100 dark:hover:bg-blue-900 w-fit rounded-full cursor-pointer'
                         >
-                            <MoonIcon
+                            <SunIcon
                                 className='w-9 h-9 border p-2 rounded-full'
                             />
                         </div>
@@ -97,9 +99,9 @@ const NavBar = () => {
                         Courses
                     </Link>
                     <Link
-                        href={'/files'}
-                        className={`${currentPath === '/files' && 'bg-gray-100 dark:bg-blue-800'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
-                        Files
+                        href={'/blog'}
+                        className={`${currentPath === '/blog' && 'bg-gray-100 dark:bg-blue-800'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
+                        Blog
                     </Link>
                     <Link
                         href={'/settings'}
@@ -116,7 +118,7 @@ const NavBar = () => {
                 </ul>
             </div>
         </nav>
-        {showMainMenu && <Menu />}
+        {/* {showMainMenu && <Menu />} */}
         {showNotificationArea && <NotificationArea />}
     </>
   )

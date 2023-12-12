@@ -1,1 +1,0 @@
-if (localStorage.theme === 'dark' || ())

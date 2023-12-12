@@ -20,11 +20,7 @@
 
 body {
   height: 100vh;
-  @apply bg-[#f0f8ff6e] dark:bg-black
-}
-
-.secondary-text {
-  @apply text-[#8D99AE]
+  @apply bg-[#f0f8ff36] dark:bg-black
 }
 
 .card-gradient {
