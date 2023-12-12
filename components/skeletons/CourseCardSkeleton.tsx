@@ -1,8 +1,8 @@
 import React from "react";
 
-const CourseCardSkeleton = () => {
+const CourseCardSkeleton = ({grid}: {grid?: boolean}) => {
   return (
-    <div className="border rounded-lg dark:border-[#333] w-full h-fit p-3 justify-end items-start flex flex-col space-y-2 cursor-pointer bg-white dark:bg-[#111] animate-pulse">
+    <div className={`border rounded-lg dark:border-[#333] w-full ${grid && 'w-50'} h-fit p-3 justify-end items-start flex flex-col space-y-2 cursor-pointer bg-white dark:bg-[#111] animate-pulse`}>
       <div className="bg-gray-200 dark:bg-gray-800 rounded h-4 w-20 animate-pulse" />
       <div className="bg-gray-200 dark:bg-gray-800 rounded h-8 w-32 animate-pulse" />
       <div className="bg-gray-200 dark:bg-gray-800 rounded h-4 w-24 animate-pulse" />
