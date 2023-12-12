@@ -7,6 +7,9 @@ import CourseCard from '@/components/CourseCard'
 import CourseCardSkeleton from '@/components/skeletons/CourseCardSkeleton'
 
 import { fetchCourses } from '@/lib/_data'
+import { RectangleGroupIcon, RectangleStackIcon, FunnelIcon } from '@heroicons/react/24/solid'
+
+
 
 
 
@@ -27,12 +30,14 @@ const Home = () => {
                 title='All Courses'
             />
             <div
-                className='border'
+                className='my-0 mx-2 flex space-x-2'
             >
                 <Search
-                    className='my-0 mx-1.5'
+                    className=''
                 />
-
+                <RectangleGroupIcon className='w-10 h-10 border dark:border-[#333] rounded-lg p-2 bg-white dark:bg-[#111] dark:text-[#eee]' />
+                {/* <RectangleStackIcon className='w-10 h-10' /> */}
+                <FunnelIcon className='w-10 h-10 border dark:border-[#333] rounded-lg p-2 bg-white dark:bg-[#111] dark:text-[#eee]' />
             </div>
             <div className="w-full p-2 space-y-2 space-x-2 max-sm:space-x-0 grid grid-cols-4 max-sm:grid-cols-1 max-md:grid-cols-3 max-lg:grid-cols-4">
                 {courseData.map((course) => (
