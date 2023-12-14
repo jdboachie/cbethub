@@ -58,10 +58,10 @@ const Page = () => {
                 className='object-cover w-full rounded-lg'
               />
               <div
-                  className='space-x-1 my-2 p-1 flex text-left text-gray-700 dark:text-[#eee] rounded-lg hover:bg-gray-100 dark:hover:bg-blue-900'
+                  className='space-x-1 my-2 p-1 flex text-left text-gray-700 dark:text-[#ccc] rounded-lg hover:bg-gray-100 dark:hover:bg-blue-900'
               >
                 <div className="w-9 h-9 p-2 animate-pulse border dark:border-[#333] rounded-full">
-                    <UserIcon className="" />
+                    <UserIcon className="text-black dark:text-white" />
                 </div>
                 <p
                     className='p-0.5 w-fit text-xs'
@@ -70,7 +70,7 @@ const Page = () => {
                     13th December, 2023
                 </p>
               </div>
-              <p className="font-semi text-xl pt-4">
+              <p className="font-semibold pt-4">
                 CBET DECEMBER CHALLENGE - CBETHUB WEBSITE UI/UX DESIGN
               </p>
             </div>
