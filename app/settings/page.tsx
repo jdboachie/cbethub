@@ -64,7 +64,7 @@ const page = () => {
             <li className='rounded-lg'>
               <p className='p-1'>Level</p>
               <select name="level" id="level" defaultValue={300}
-                className='border p-1 bg-white dark:bg-black rounded-lg dark:border-[#333] w-full max-w-sm text-gray-500'
+                className='border p-2 bg-white dark:bg-black rounded-lg dark:border-[#333] w-full max-w-sm text-gray-500'
               >
                   <option value="" disabled>Select level</option>
                   <option value="100">100</option>
