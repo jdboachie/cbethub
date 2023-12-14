@@ -46,13 +46,13 @@ const page = () => {
             </li>
             <li className='rounded-lg'>
               <p className='p-1'>Phone Number</p>
-              <input type="tel" name="phone" id="phone" placeholder='+233599000000'
+              <input type="tel" name="phone" id="phone" placeholder='+233500000000'
                 className='p-2 w-full dark:bg-black rounded-lg bg-inherit text-gray-500 border dark:border-[#333] focus:border'/>
             </li>
             <li className='rounded-lg'>
               <p className='p-1'>Department</p>
               <select name="dept" id="dept"
-                className='border p-2 dark:bg-black rounded-lg dark:border-[#333] w-full max-w-sm text-gray-500'
+                className='border p-2 bg-white dark:bg-black rounded-lg dark:border-[#333] w-full max-w-sm text-gray-500'
               >
                   <option value="" disabled>Select department</option>
                   <option value="aces">Computer Engineering</option>
@@ -64,7 +64,7 @@ const page = () => {
             <li className='rounded-lg'>
               <p className='p-1'>Level</p>
               <select name="level" id="level" defaultValue={300}
-                className='border p-1 dark:bg-black rounded-lg dark:border-[#333] w-full max-w-sm text-gray-500'
+                className='border p-1 bg-white dark:bg-black rounded-lg dark:border-[#333] w-full max-w-sm text-gray-500'
               >
                   <option value="" disabled>Select level</option>
                   <option value="100">100</option>
