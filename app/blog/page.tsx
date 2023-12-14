@@ -45,22 +45,22 @@ const Page = () => {
         </div>
         <div className={`w-full dark:text-[#eee] grid grid-cols-2 p-2 ${ view === 'list' && 'max-sm:grid-cols-1'}`}>
           <BlogPost
-            grid
+            grid={view === 'grid'}
             imgURL='/design.jpg'
             title='CBET December Challenge'
           />
           <BlogPost
-            grid
+            grid={view === 'grid'}
             imgURL='/fullstack.jpg'
             title='Full Stack Web Development Bootcamp'
           />
           <BlogPost
-            grid
+            grid={view === 'grid'}
             imgURL='/recruit.jpg'
             title='ACES Media Recruitment'
           />
           <BlogPost
-            grid
+            grid={view === 'grid'}
             imgURL='/blogpic.jpg'
             title='American Express is acquiring Kabbage for as much as $850M'
           />
