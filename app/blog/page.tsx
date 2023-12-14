@@ -70,7 +70,7 @@ const Page = () => {
                     13th December, 2023
                 </p>
               </div>
-              <p className="font-bold text-3xl pt-4">
+              <p className="font-semi text-xl pt-4">
                 CBET DECEMBER CHALLENGE - CBETHUB WEBSITE UI/UX DESIGN
               </p>
             </div>
