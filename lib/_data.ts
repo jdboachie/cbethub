@@ -5,7 +5,7 @@ const courses = [
         courseName: 'Engineering in Society',
         description: '',
         lecturerName: 'Dr. John Doe',
-        fileCount: 10,
+        fileCount: 5,
         tags: ['Computer Engineering', 'Computer Science']
     },
     {
@@ -13,7 +13,7 @@ const courses = [
         courseName: 'Computer Engineering Lab I',
         description: '',
         lecturerName: 'Prof. Jane Smith',
-        fileCount: 10,
+        fileCount: 7,
         tags: ['Computer Engineering', 'Computer Science']
     },
     {
@@ -21,47 +21,47 @@ const courses = [
         courseName: 'Discrete Structures',
         description: '',
         lecturerName: 'Dr. Emily Addo',
-        fileCount: 10,
+        fileCount: 7,
         tags: ['Computer Engineering', 'Computer Science']
     },
     {
-        courseCode: 'CENG291',
-        courseName: 'Engineering in Society',
+        courseCode: 'COE283',
+        courseName: 'Semiconductor Devices',
         description: '',
-        lecturerName: 'Dr. John Doe',
-        fileCount: 10,
+        lecturerName: 'Dr. Selase Agbemenu',
+        fileCount: 9,
         tags: ['Computer Engineering', 'Computer Science']
     },
     {
-        courseCode: 'CENG291',
-        courseName: 'Engineering in Society',
+        courseCode: 'COE559',
+        courseName: 'Object Oriented Programming',
         description: '',
-        lecturerName: 'Dr. John Doe',
-        fileCount: 10,
+        lecturerName: 'Dr. Theresa Adjaidoo',
+        fileCount: 15,
         tags: ['Computer Engineering', 'Computer Science']
     },
     {
-        courseCode: 'CENG291',
-        courseName: 'Engineering in Society',
+        courseCode: 'COE213',
+        courseName: 'Data Structures and Algorithms in Python',
         description: '',
-        lecturerName: 'Dr. John Doe',
-        fileCount: 10,
+        lecturerName: 'Dr. Theresa Adjaidoo',
+        fileCount: 12,
         tags: ['Computer Engineering', 'Computer Science']
     },
     {
-        courseCode: 'CENG291',
-        courseName: 'Engineering in Society',
+        courseCode: 'MATH151',
+        courseName: 'Algebra',
         description: '',
-        lecturerName: 'Dr. John Doe',
-        fileCount: 10,
+        lecturerName: 'Dr. Niacin Touto',
+        fileCount: 21,
         tags: ['Computer Engineering', 'Computer Science']
     },
     {
-        courseCode: 'CENG291',
-        courseName: 'Engineering in Society',
+        courseCode: 'CBE442',
+        courseName: 'Conduit and Burrow Effects',
         description: '',
-        lecturerName: 'Dr. John Doe',
-        fileCount: 10,
+        lecturerName: 'Dr. Dototo Mba',
+        fileCount: 2,
         tags: ['Computer Engineering', 'Computer Science']
     },
 

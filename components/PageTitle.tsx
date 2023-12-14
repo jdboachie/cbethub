@@ -1,10 +1,11 @@
 import React from 'react'
+import { lato } from '@/lib/fonts'
 
 const PageTitle = ({title}: {title?: string}) => {
   return (
     <div
-        className='text-3xl text-left font-[500] border-b dark:border-b-[#333] dark:text-[#eee]
-                   px-5 py-7'
+        className={`text-3xl text-left font-[500] dark:text-[#eee]
+                   px-5 py-7`}
     >
         {title? title : 'Error'}
     </div>

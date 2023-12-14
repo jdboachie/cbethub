@@ -1,19 +1,14 @@
 'use client'
 
-import { useState } from 'react'
-
 import Search from '@/components/Search'
 import NavBar from '@/components/NavBar'
 import PageTitle from '@/components/PageTitle'
 import CourseCard from '@/components/CourseCard'
 import CourseCardSkeleton from '@/components/skeletons/CourseCardSkeleton'
 
+import { useState } from 'react'
 import { fetchCourses } from '@/lib/_data'
 import { RectangleGroupIcon, RectangleStackIcon, FunnelIcon } from '@heroicons/react/24/solid'
-
-
-
-
 
 const Home = () => {
 
@@ -27,27 +22,27 @@ const Home = () => {
     >
         <NavBar />
         <main
-            className=' w-full pt-[7em] space-y-4 max-w-6xl'
+            className=' w-full pt-[7em] space-y-2 max-w-6xl'
         >
             <PageTitle
                 title='All Courses'
             />
             <div
-                className='my-0 mx-2 flex space-x-1'
+                className='my-0 mx-2 flex space-x-0.5'
             >
                 <Search
-                    className='w-5/6'
+                    className=''
                 />
                 {view === 'list' ? (
                     <RectangleGroupIcon
                         onClick={() => setView('grid')}
-                        className='cursor-pointer w-10 h-10 border dark:border-[#333] rounded-lg p-2 bg-white dark:bg-[#111] dark:text-[#eee]' />
+                        className='cursor-pointer w-9 h-9 border dark:border-[#333] rounded-lg p-2 bg-white dark:bg-[#111] dark:text-[#eee]' />
                 ) : (
                     <RectangleStackIcon
                         onClick={() => setView('list')}
-                        className='cursor-pointer w-10 h-10 border dark:border-[#333] rounded-lg p-2 bg-white dark:bg-[#111] dark:text-[#eee]' />
+                        className='cursor-pointer w-9 h-9 border dark:border-[#333] rounded-lg p-2 bg-white dark:bg-[#111] dark:text-[#eee]' />
                 )}
-                <FunnelIcon className='w-10 h-10 border dark:border-[#333] rounded-lg p-2 bg-white dark:bg-[#111] dark:text-[#eee]' />
+                <FunnelIcon className='w-9 h-9 border dark:border-[#333] rounded-lg p-2 bg-white dark:bg-[#111] dark:text-[#eee]' />
             </div>
             <div className={`w-full p-2 space-y-2 space-x-2 max-sm:space-x-0 grid grid-cols-4 max-sm:grid-cols-1 ${ view === 'grid' && 'max-sm:grid-cols-2 max-sm:space-x-1' } max-md:grid-cols-3 max-lg:grid-cols-4`}>
                 {courseData.map((course) => (

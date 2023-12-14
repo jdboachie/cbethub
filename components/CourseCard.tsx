@@ -34,14 +34,14 @@ const CourseCard = (
     >
         <p className="font-mono text-xs text-gray-500 dark:text-gray-300">{courseCode}</p>
         <p
-            className={`text-left max-sm:text-sm font-[500] card-text-gradient`}
-        >
-            {courseName}
-        </p>
-        <p
-            className='text-left pb-1 text-xs text-gray-500 dark:text-gray-300'
+            className='text-left text-xs text-gray-500 dark:text-gray-300'
         >
             {lecturerName}
+        </p>
+        <p
+            className={`text-left pb-1 max-sm:text-sm font-[500] card-text-gradient`}
+        >
+            {courseName}
         </p>
         <div
             className="w-full pt-1 flex flex-wrap space-x-0.5 space-y-0.5 justify-start"

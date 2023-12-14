@@ -3,6 +3,7 @@
 import NavBar from "@/components/NavBar"
 import PageTitle from "@/components/PageTitle"
 import Tag from "@/components/Tag"
+import File from '@/components/File'
 import { fetchCourseById } from "@/lib/_data"
 import { DocumentArrowDownIcon } from "@heroicons/react/24/solid"
 
@@ -50,22 +51,21 @@ const page = (
                     Files
                 </p>
                 <ul className='flex flex-col space-y-1 rounded-lg text-xs dark:text-[#eee]'>
-                    <li className='p-2 rounded-lg border dark:border-[#333] bg-white dark:bg-[#111] hover:bg-gray-100 dark:hover:bg-[#222] cursor-pointer'>
-                        <DocumentArrowDownIcon className='w-4 h-4 mr-1 inline-block'/>
-                        demofile1.pdf
-                    </li>
-                    <li className='p-2 rounded-lg border dark:border-[#333] bg-white dark:bg-[#111] hover:bg-gray-100 dark:hover:bg-[#222] cursor-pointer'>
-                        <DocumentArrowDownIcon className='w-4 h-4 mr-1 inline-block'/>
-                        demofile2.pdf
-                    </li>
-                    <li className='p-2 rounded-lg border dark:border-[#333] bg-white dark:bg-[#111] hover:bg-gray-100 dark:hover:bg-[#222] cursor-pointer'>
-                        <DocumentArrowDownIcon className='w-4 h-4 mr-1 inline-block'/>
-                        demofile3.pdf
-                    </li>
-                    <li className='p-2 rounded-lg border dark:border-[#333] bg-white dark:bg-[#111] hover:bg-gray-100 dark:hover:bg-[#222] cursor-pointer'>
-                        <DocumentArrowDownIcon className='w-4 h-4 mr-1 inline-block'/>
-                        demofile4.pdf
-                    </li>
+                    <File />
+                    <File />
+                    <File />
+                    <File />
+                    <File />
+                    <File />
+                    <File />
+                    <File />
+                    <File />
+                    <File />
+                    <File />
+                    <File />
+                    <File />
+                    <File />
+                    <File />
                 </ul>
             </div>
         </main>
