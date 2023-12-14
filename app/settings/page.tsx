@@ -36,18 +36,18 @@ const page = () => {
             <li className='rounded-lg'>
               <p className='p-1'>Name</p>
               <input type="text" name="name" id="name" placeholder='Jude Boachie'
-                className='p-2 dark:bg-black rounded-lg bg-inherit focus:border px-1 py-2 w-full text-gray-500'/>
+                className='p-2 dark:bg-black border dark:border-[#333] rounded-lg bg-inherit focus:border px-1 py-2 w-full text-gray-500'/>
             </li>
 
             <li className='rounded-lg'>
               <p className='p-1'>Email</p>
               <input type="email" name="email" id="email" placeholder='judeboachiekwame@gmail.com'
-                className='p-2 w-full dark:bg-black rounded-lg bg-inherit text-gray-500 border-none focus:border'/>
+                className='p-2 w-full dark:bg-black rounded-lg bg-inherit text-gray-500 border dark:border-[#333] focus:border'/>
             </li>
             <li className='rounded-lg'>
               <p className='p-1'>Phone Number</p>
               <input type="tel" name="phone" id="phone" placeholder='+233599000000'
-                className='p-2 w-full dark:bg-black rounded-lg bg-inherit text-gray-500 border-none focus:border'/>
+                className='p-2 w-full dark:bg-black rounded-lg bg-inherit text-gray-500 border dark:border-[#333] focus:border'/>
             </li>
             <li className='rounded-lg'>
               <p className='p-1'>Department</p>
