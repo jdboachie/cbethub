@@ -13,7 +13,7 @@ const BlogPost = (
 ) => {
   return (
     <div
-        className={`border h-fit m-2 w-fit rounded-lg dark:border-[#333] p-3 justify-end items-start flex flex-col space-y-2 cursor-pointer
+        className={`border h-fit m-2 max-sm:m-1 w-fit rounded-lg dark:border-[#333] p-3 justify-end items-start flex flex-col space-y-2 cursor-pointer
         hover:shadow active:bg-transparent dark:bg-[#111] bg-white
         transition duration-250 ease-in-out hover:text-blue-500`}
     >
