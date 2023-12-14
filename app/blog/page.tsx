@@ -11,8 +11,7 @@ import {
   FunnelIcon,
   UserIcon,
 } from '@heroicons/react/24/solid'
-import Link from 'next/link'
-import Image from 'next/image'
+import BlogPost from '@/components/BlogPost'
 
 const Page = () => {
 
@@ -44,36 +43,23 @@ const Page = () => {
             )}
             <FunnelIcon className='w-9 h-9 border dark:border-[#333] rounded-lg p-2 bg-white dark:bg-[#111] dark:text-[#eee]' />
         </div>
-        <div className={`w-full dark:text-[#eee] p-2 space-y-2 ${ view === 'grid' && 'max-sm:grid-cols-2 max-sm:space-x-1' } max-md:grid-cols-3 max-lg:grid-cols-4`}>
-            <div
-              className={`border rounded-lg dark:border-[#333] p-3 justify-end items-start flex flex-col space-y-2 cursor-pointer
-              hover:shadow-xl active:bg-transparent dark:bg-[#111] bg-white
-              transition duration-250 ease-in-out`}
-            >
-              <Image
-                alt='blog post title'
-                src={'/blogpic.jpg'}
-                width={5000}
-                height={5000}
-                className='object-cover w-full rounded-lg'
-              />
-              <div
-                  className='space-x-1 my-2 p-1 flex text-left text-gray-700 dark:text-[#ccc] rounded-lg hover:bg-gray-100 dark:hover:bg-blue-900'
-              >
-                <div className="w-9 h-9 p-2 animate-pulse border dark:border-[#333] rounded-full">
-                    <UserIcon className="text-black dark:text-white" />
-                </div>
-                <p
-                    className='p-0.5 w-fit text-xs'
-                    >
-                    Jude Boachie < br />
-                    13th December, 2023
-                </p>
-              </div>
-              <p className="font-semibold pt-4">
-                CBET DECEMBER CHALLENGE - CBETHUB WEBSITE UI/UX DESIGN
-              </p>
-            </div>
+        <div className={`w-full dark:text-[#eee] grid grid-cols-2 p-2 ${ view === 'list' && 'max-sm:grid-cols-1'}`}>
+          <BlogPost
+            imgURL='/blogpic.jpg'
+            title='American Express is acquiring Kabbage for as much as $850M'
+          />
+          <BlogPost
+            imgURL='/design.jpg'
+            title='CBET December Challenge'
+          />
+          <BlogPost
+            imgURL='/fullstack.jpg'
+            title='Full Stack Web Development Bootcamp'
+          />
+          <BlogPost
+            imgURL='/recruit.jpg'
+            title='ACES Media Recruitment'
+          />
         </div>
       </main>
 
