@@ -55,7 +55,7 @@ const NavBar = ({ isForCourseView }: {isForCourseView?: boolean}) => {
                             className='space-x-1 p-1 flex text-xs text-left text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-blue-900'
                         >
                             <div className="w-9 h-9 p-2 animate-pulse border dark:border-[#333] rounded-full">
-                                <UserIcon className="" />
+                                <UserIcon className="text-black dark:text-white" />
                             </div>
                             <p
                                 className='p-0.5 w-fit dark:text-[#eee]'
