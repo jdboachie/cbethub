@@ -24,10 +24,10 @@ const CourseCard = (
   return (
     <Link
         className={`border rounded-lg dark:border-[#333] h-fit p-3 justify-end items-start flex flex-col space-y-2 cursor-pointer
-                   dark:bg-[#111] bg-white
+                   bg-gradient-to-t from-white dark:from-[#111] via-white dark:via-[#111] to-zinc-100 dark:to-black bg-fixed bg-no-repeat bg-cover
                    transition duration-250 ease-in-out
                    ${grid ? 'max-sm:w-fit': 'max-sm:w-full'}
-                   ${clicked ? 'scale-105' : ''}`}
+                   ${clicked ? 'scale-110 shadow-xl max-sm:scale-100 max-sm:shadow-none' : ''}`}
         onMouseOver={() => setClicked(true)}
         onMouseLeave={() => setClicked(false)}
         href={'/course/' + courseCode?.toLowerCase()}
