@@ -99,10 +99,10 @@ const NavBar = ({ isForCourseView }: {isForCourseView?: boolean}) => {
                 </div>
             </div>
             <div className='w-full max-w-6xl mx-auto px-4 py-2 dark:border-b-[#333] text-center'>
-                <ul className='flex space-x-0 rounded-lg'>
+                <ul className='flex space-x-1'>
                     <Link
                         href={'/'}
-                        className={`${(currentPath === '/' || isForCourseView) && 'bg-gray-100 dark:bg-blue-800'} p-3 max-sm:p-1 rounded-l-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
+                        className={`${(currentPath === '/' || isForCourseView) && 'bg-gray-100 dark:bg-blue-800'} p-3 max-sm:p-1 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
                         <BookOpenIcon
                             className='w-9 h-9 p-2 rounded-full hidden max-sm:inline-block'
                         />
@@ -112,7 +112,7 @@ const NavBar = ({ isForCourseView }: {isForCourseView?: boolean}) => {
                     </Link>
                     <Link
                         href={'/blog'}
-                        className={`${currentPath === '/blog' && 'bg-gray-100 dark:bg-blue-800'} p-3 max-sm:p-1 text-xs rounded-r-lg hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
+                        className={`${currentPath === '/blog' && 'bg-gray-100 dark:bg-blue-800'} p-3 max-sm:p-1 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
                         <NewspaperIcon
                             className='w-9 h-9 p-2 rounded-full hidden max-sm:inline-block'
                         />
@@ -120,7 +120,7 @@ const NavBar = ({ isForCourseView }: {isForCourseView?: boolean}) => {
                             Blog
                         </p>
                     </Link>
-                    {/* <Link
+                    <Link
                         href={'/account'}
                         className={`${currentPath === '/account' && 'bg-gray-100 dark:bg-blue-800'} p-3 max-sm:p-1 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
                         <CogIcon
@@ -129,7 +129,7 @@ const NavBar = ({ isForCourseView }: {isForCourseView?: boolean}) => {
                         <p className="max-sm:hidden">
                             Account
                         </p>
-                    </Link> */}
+                    </Link>
                     {/* <Link
                         href={'/logout'}
                         className={`${currentPath === '/logout' && 'bg-gray-100 dark:bg-blue-800'} hover:bg-gray-100 dark:hover:bg-blue-900 w-fit`}>
