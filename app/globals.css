@@ -20,7 +20,7 @@
 
 body {
   height: 100vh;
-  @apply bg-white dark:bg-black
+  @apply bg-white dark:bg-[#001]
 }
 
 .card-gradient {
