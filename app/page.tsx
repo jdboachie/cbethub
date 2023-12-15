@@ -18,11 +18,11 @@ const Home = () => {
 
   return (
     <div
-        className="flex flex-col items-center justify-center w-full text-center space-y-4"
+        className="flex flex-col items-center justify-center w-full"
     >
         <NavBar />
         <main
-            className=' w-full pt-[8em] max-w-6xl'
+            className=' w-full pt-[8em] max-w-6xl space-y-5'
         >
             <PageTitle
                 title='All Courses'

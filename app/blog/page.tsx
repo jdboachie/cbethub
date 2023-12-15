@@ -19,11 +19,11 @@ const Page = () => {
 
   return (
     <div
-      className="flex flex-col w-full items-center justify-center space-y-5"
+      className="flex flex-col w-full items-center justify-center"
     >
       <NavBar />
       <main
-            className=' w-full pt-[7em] space-y-2 max-w-6xl'
+            className=' w-full space-y-5 pt-[8em] max-w-6xl'
       >
         <PageTitle title="Blog"/>
         <div

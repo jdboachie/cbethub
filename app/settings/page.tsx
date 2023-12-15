@@ -10,10 +10,10 @@ import {
 const page = () => {
   return (
     <div
-      className="flex flex-col pt-[8em] items-center justify-center"
+      className="flex flex-col items-center justify-center"
     >
       <NavBar />
-      <main className="max-w-6xl w-full flex flex-col">
+      <main className="max-w-6xl w-full flex flex-col pt-[8em] space-y-5">
         <PageTitle title="Settings"/>
         <div
           className='flex flex-col space-y-2 p-4 justify-center items-center w-full max-w-6xl'
