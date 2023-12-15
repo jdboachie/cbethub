@@ -11,8 +11,8 @@ const Search = ({className} : {className?: string}) => {
           type="text"
           name=""
           id=""
-          placeholder="The funnel thingie depends on backend..."
-          className='border-none active:border-none focus:border-none outline-none w-full py-1.5 pr-1 text-xs text-gray-600 bg-transparent'
+          placeholder="The funnel thingie no dey work..."
+          className='border-none active:border-none focus:border-none outline-none w-full py-1.5 text-xs text-gray-600 bg-transparent'
         />
     </div>
   )
