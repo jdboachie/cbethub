@@ -110,7 +110,7 @@ const NavBar = ({ isForCourseView }: {isForCourseView?: boolean}) => {
                 <ul className='flex space-x-1'>
                     <Link
                         href={'/'}
-                        className={`${(currentPath === '/' || isForCourseView) && 'bg-blue-100 text-blue-800 dark:bg-blue-800'} p-3 max-sm:p-1 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
+                        className={`${(currentPath === '/' || isForCourseView) && 'bg-blue-100 text-blue-800 dark:text-white dark:bg-blue-800'} p-3 max-sm:p-1 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
                         <BookOpenIcon
                             className='w-9 h-9 p-2 rounded-full hidden max-sm:inline-block'
                         />
@@ -120,7 +120,7 @@ const NavBar = ({ isForCourseView }: {isForCourseView?: boolean}) => {
                     </Link>
                     <Link
                         href={'/blog'}
-                        className={`${currentPath === '/blog' && 'bg-blue-100 text-blue-800 dark:bg-blue-800'} p-3 max-sm:p-1 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
+                        className={`${currentPath === '/blog' && 'bg-blue-100 text-blue-800 dark:text-white dark:bg-blue-800'} p-3 max-sm:p-1 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
                         <NewspaperIcon
                             className='w-9 h-9 p-2 rounded-full hidden max-sm:inline-block'
                         />
@@ -130,7 +130,7 @@ const NavBar = ({ isForCourseView }: {isForCourseView?: boolean}) => {
                     </Link>
                     <Link
                         href={'/account'}
-                        className={`${currentPath === '/account' && 'bg-blue-100 text-blue-800 dark:bg-blue-800'} p-3 max-sm:p-1 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
+                        className={`${currentPath === '/account' && 'bg-blue-100 text-blue-800 dark:text-white dark:bg-blue-800'} p-3 max-sm:p-1 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
                         <CogIcon
                             className='w-9 h-9 p-2 rounded-full hidden max-sm:inline-block'
                         />
