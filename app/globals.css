@@ -20,7 +20,7 @@
 
 body {
   height: 100vh;
-  @apply bg-blend-darken bg-gradient-to-tl from-blue-200 dark:from-[#03045e] via-teal-50 dark:via-[#111] to-white dark:to-[#000] bg-fixed bg-no-repeat bg-cover
+  @apply bg-gradient-to-tr from-blue-50 dark:from-[#020229] via-teal-50 dark:via-[#111] to-white dark:to-[#000] bg-fixed bg-no-repeat bg-cover
 }
 
 .card-gradient {

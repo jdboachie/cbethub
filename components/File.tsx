@@ -4,7 +4,7 @@ DocumentIcon
 
 const File = () => {
   return (
-    <li className='p-3 flex text-xs font-mono justify-between rounded-lg border dark:border-[#333] bg-white dark:bg-[#111] hover:text-blue-500 dark:hover:text-blue-500 cursor-pointer'>
+    <li className='p-3 flex text-xs font-mono justify-between rounded-lg border dark:border-[#333] bg-gradient-to-b backdrop-brightness-0 from-blue-50 dark:from-[#020229] via-teal-50 dark:via-[#111] to-white dark:to-[#000] bg-fixed bg-no-repeat bg-cover hover:text-blue-500 dark:hover:text-blue-500 cursor-pointer'>
         <div className="flex">
             <DocumentIcon className='w-4 h-4 mr-1 inline-block dark:text-white'/>
             <p className="text-xs">

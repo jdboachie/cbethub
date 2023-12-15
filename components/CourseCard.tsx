@@ -24,7 +24,7 @@ const CourseCard = (
   return (
     <Link
         className={`border rounded-lg dark:border-[#333] h-fit p-3 justify-end items-start flex flex-col space-y-2 cursor-pointer
-                   hover:shadow-xl active:bg-transparent dark:bg-[#111] bg-white
+                   hover:shadow-xl dark:bg-[#111] bg-white
                    transition duration-250 ease-in-out
                    ${grid ? 'max-sm:w-fit': 'max-sm:w-full'}
                    ${clicked ? 'shadow-xl scale-105' : ''}`}
