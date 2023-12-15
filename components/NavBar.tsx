@@ -14,6 +14,7 @@ import {
 import Menu from '@/components/Menu'
 import NotificationArea from '@/components/NotificationArea'
 import Link from 'next/link'
+import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 
@@ -54,8 +55,15 @@ const NavBar = ({ isForCourseView }: {isForCourseView?: boolean}) => {
                             href={'/account'}
                             className='space-x-1 p-1 flex text-xs text-left text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-blue-900'
                         >
-                            <div className="w-9 h-9 p-2 animate-pulse border dark:border-[#333] rounded-full">
-                                <UserIcon className="text-black dark:text-white" />
+                            <div className="w-9 h-9 animate-pulse-n border dark:border-[#333] rounded-full">
+                            <Image
+                                src={'/jdboachie.jpg'}
+                                alt='user image'
+                                width={1000}
+                                height={1000}
+                                objectFit='cover'
+                                className='rounded-full'
+                            />
                             </div>
                             <p
                                 className='p-0.5 w-fit dark:text-[#eee]'

@@ -6,6 +6,7 @@ import {
   UserIcon,
   CameraIcon,
 } from '@heroicons/react/24/solid'
+import Image from 'next/image'
 
 const page = () => {
   return (
@@ -21,7 +22,15 @@ const page = () => {
           {/* This should be the user's image */}
           <div className="w-[10rem] relative">
             <div className="relative">
-              <UserIcon className="z-0 p-5 text-gray-300 animate-pulse border dark:border-[#333] rounded-full bg-white dark:bg-[#111]" />
+              <Image
+                src={'/jdboachie.jpg'}
+                alt='user image'
+                width={1000}
+                height={1000}
+                objectFit='cover'
+                className='rounded-full'
+              />
+              {/* <UserIcon className="z-0 p-5 text-gray-300 animate-pulse border dark:border-[#333] rounded-full bg-white dark:bg-[#111]" /> */}
               <CameraIcon className="z-10 w-9 h-9 p-2 absolute top-[8rem] right-[1rem] transform translate-x-1/3 -translate-y-1/3 rounded-full border text-gray-300 bg-white dark:bg-[#111]" />
             </div>
           </div>

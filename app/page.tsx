@@ -25,7 +25,7 @@ const Home = () => {
             className=' w-full pt-[8em] max-w-6xl space-y-5'
         >
             <PageTitle
-                title='All Courses'
+                title='Courses'
             />
             <div
                 className='my-0 mx-2 flex space-x-0.5'
