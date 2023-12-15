@@ -51,20 +51,20 @@ const page = (
                     Files
                 </p>
                 <ul className='flex flex-col space-y-1 rounded-lg text-xs dark:text-[#eee]'>
-                <li className='p-3 flex text-xs font-mono justify-between rounded-lg border dark:border-[#333] bg-gradient-to-b backdrop-brightness-0 from-blue-50 dark:from-[#020229] via-teal-50 dark:via-[#111] to-white dark:to-[#000] bg-fixed bg-no-repeat bg-cover hover:text-blue-500 dark:hover:text-blue-500 cursor-pointer'>
-                    <div className="flex">
-                        <DocumentIcon className='w-4 h-4 mr-1 inline-block dark:text-white'/>
-                        <p className="text-xs">
-                            course.zip
+                    <li className='p-3 flex text-xs font-mono justify-between rounded-lg border dark:border-[#333] bg-gradient-to-b backdrop-brightness-0 from-blue-50 dark:from-[#020229] via-teal-50 dark:via-[#111] to-white dark:to-[#000] bg-fixed bg-no-repeat bg-cover hover:text-blue-500 dark:hover:text-blue-500 cursor-pointer'>
+                        <div className="flex">
+                            <DocumentIcon className='w-4 h-4 mr-1 inline-block dark:text-white'/>
+                            <p className="text-xs">
+                                course.zip
+                            </p>
+                        </div>
+                        <p className="">
+                            12/12/2023
                         </p>
-                    </div>
-                    <p className="">
-                        12/12/2023
-                    </p>
-                    <p className="">
-                        2.3Mb
-                    </p>
-                </li>
+                        <p className="">
+                            2.3Mb
+                        </p>
+                    </li>
                     <File />
                     <File />
                     <File />

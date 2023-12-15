@@ -51,7 +51,7 @@ const NavBar = ({ isForCourseView }: {isForCourseView?: boolean}) => {
                     <div className='flex max-sm:w-full max-sm:justify-between'>
 
                         <Link
-                            href={'/settings'}
+                            href={'/account'}
                             className='space-x-1 p-1 flex text-xs text-left text-gray-700 rounded-lg hover:bg-gray-100 dark:hover:bg-blue-900'
                         >
                             <div className="w-9 h-9 p-2 animate-pulse border dark:border-[#333] rounded-full">
@@ -111,9 +111,9 @@ const NavBar = ({ isForCourseView }: {isForCourseView?: boolean}) => {
                         Blog
                     </Link>
                     <Link
-                        href={'/settings'}
-                        className={`${currentPath === '/settings' && 'bg-gray-100 dark:bg-blue-800'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
-                        Settings
+                        href={'/account'}
+                        className={`${currentPath === '/account' && 'bg-gray-100 dark:bg-blue-800'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
+                        Account
                     </Link>
                     {/* <Link
                         href={'/logout'}

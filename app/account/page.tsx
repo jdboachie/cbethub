@@ -14,7 +14,7 @@ const page = () => {
     >
       <NavBar />
       <main className="max-w-6xl w-full flex flex-col pt-[8em] space-y-5">
-        <PageTitle title="Settings"/>
+        <PageTitle title="Account"/>
         <div
           className='flex flex-col space-y-2 p-4 justify-center items-center w-full max-w-6xl'
         >
