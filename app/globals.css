@@ -20,7 +20,7 @@
 
 body {
   height: 100vh;
-  @apply bg-[whitesmoke] dark:bg-black
+  @apply bg-white dark:bg-black
 }
 
 .card-gradient {
