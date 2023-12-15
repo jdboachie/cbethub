@@ -103,33 +103,33 @@ const NavBar = ({ isForCourseView }: {isForCourseView?: boolean}) => {
                     <Link
                         href={'/'}
                         className={`${(currentPath === '/' || isForCourseView) && 'bg-gray-100 dark:bg-blue-800'} p-3 max-sm:p-1 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
+                        <BookOpenIcon
+                            className='w-9 h-9 p-2 rounded-full hidden max-sm:inline-block'
+                        />
                         <p className='max-sm:hidden'>
                             Courses
                         </p>
-                        <BookOpenIcon
-                            className='w-9 h-9 p-2 rounded-full max-sm:inline-block'
-                        />
                     </Link>
                     <Link
                         href={'/blog'}
                         className={`${currentPath === '/blog' && 'bg-gray-100 dark:bg-blue-800'} p-3 max-sm:p-1 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
+                        <NewspaperIcon
+                            className='w-9 h-9 p-2 rounded-full hidden max-sm:inline-block'
+                        />
                         <p className="max-sm:hidden">
                             Blog
                         </p>
-                        <NewspaperIcon
-                            className='w-9 h-9 p-2 rounded-full max-sm:inline-block'
-                        />
                     </Link>
-                    <Link
+                    {/* <Link
                         href={'/account'}
                         className={`${currentPath === '/account' && 'bg-gray-100 dark:bg-blue-800'} p-3 max-sm:p-1 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
+                        <CogIcon
+                            className='w-9 h-9 p-2 rounded-full hidden max-sm:inline-block'
+                        />
                         <p className="max-sm:hidden">
                             Account
                         </p>
-                        <CogIcon
-                            className='w-9 h-9 p-2 rounded-full max-sm:inline-block'
-                        />
-                    </Link>
+                    </Link> */}
                     {/* <Link
                         href={'/logout'}
                         className={`${currentPath === '/logout' && 'bg-gray-100 dark:bg-blue-800'} hover:bg-gray-100 dark:hover:bg-blue-900 w-fit`}>
