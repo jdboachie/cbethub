@@ -2,14 +2,14 @@ import { useState } from 'react'
 import { silkscreen } from '@/lib/fonts'
 
 import {
-    Bars2Icon,
+    CogIcon,
+    BookOpenIcon,
+    NewspaperIcon,
     BellIcon,
     XMarkIcon,
     UserIcon,
     SunIcon,
     MoonIcon,
-    MagnifyingGlassIcon,
-    ArrowRightOnRectangleIcon,
 } from '@heroicons/react/24/solid'
 import Menu from '@/components/Menu'
 import NotificationArea from '@/components/NotificationArea'
@@ -102,18 +102,33 @@ const NavBar = ({ isForCourseView }: {isForCourseView?: boolean}) => {
                 <ul className='flex space-x-1'>
                     <Link
                         href={'/'}
-                        className={`${(currentPath === '/' || isForCourseView) && 'bg-gray-100 dark:bg-blue-800'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
-                        Courses
+                        className={`${(currentPath === '/' || isForCourseView) && 'bg-gray-100 dark:bg-blue-800'} p-3 max-sm:p-1 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
+                        <p className='max-sm:hidden'>
+                            Courses
+                        </p>
+                        <BookOpenIcon
+                            className='w-9 h-9 p-2 rounded-full max-sm:inline-block'
+                        />
                     </Link>
                     <Link
                         href={'/blog'}
-                        className={`${currentPath === '/blog' && 'bg-gray-100 dark:bg-blue-800'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
-                        Blog
+                        className={`${currentPath === '/blog' && 'bg-gray-100 dark:bg-blue-800'} p-3 max-sm:p-1 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
+                        <p className="max-sm:hidden">
+                            Blog
+                        </p>
+                        <NewspaperIcon
+                            className='w-9 h-9 p-2 rounded-full max-sm:inline-block'
+                        />
                     </Link>
                     <Link
                         href={'/account'}
-                        className={`${currentPath === '/account' && 'bg-gray-100 dark:bg-blue-800'} p-3 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
-                        Account
+                        className={`${currentPath === '/account' && 'bg-gray-100 dark:bg-blue-800'} p-3 max-sm:p-1 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
+                        <p className="max-sm:hidden">
+                            Account
+                        </p>
+                        <CogIcon
+                            className='w-9 h-9 p-2 rounded-full max-sm:inline-block'
+                        />
                     </Link>
                     {/* <Link
                         href={'/logout'}
