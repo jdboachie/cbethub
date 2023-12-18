@@ -67,10 +67,41 @@ const courses = [
 
 ]
 
+const blogPosts = [
+    {
+        imgURL: "/design.jpg",
+        title: "CBET December Challenge",
+        id: "0000001"
+    },
+    {
+        imgURL: "/fullstack.jpg",
+        title: "Full Stack Web Development Bootcamp",
+        id: "0000002"
+    },
+    {
+        imgURL: "/recruit.jpg",
+        title: "ACES Media Recruitment",
+        id: "0000003"
+    },
+    {
+        imgURL: "/blogpic.jpg",
+        title: "American Express is acquiring Kabbage for as much as $850M",
+        id: "0000004"
+    }
+]
+
 export const fetchCourses = () => {
     return courses
 }
 
 export const fetchCourseById = (id: string) => {
     return courses.find(course => course.courseCode === id.toUpperCase())
+}
+
+export const fetchBlogPosts = () => {
+    return blogPosts
+}
+
+export const fetchBlogPostById = (id: string) => {
+    return blogPosts.find(blogPost => blogPost.id === id)
 }

@@ -1,4 +1,5 @@
 import Image from "next/image"
+import Link from "next/link"
 
 import { UserIcon } from "@heroicons/react/24/solid"
 
@@ -6,18 +7,21 @@ const BlogPost = (
     {
         imgURL,
         title,
-        grid
+        grid,
+        id,
     } : {
         imgURL?: string,
         title?: string,
-        grid?: boolean
+        grid?: boolean,
+        id?: string,
     }
 ) => {
   return (
-    <div
+    <Link
         className={`border h-fit m-2 max-sm:m-1 w-fit rounded-lg dark:border-[#333] p-3 justify-end items-start flex flex-col space-y-2 cursor-pointer
         hover:shadow active:bg-transparent dark:bg-[#111] bg-white
         transition duration-250 ease-in-out hover:text-blue-500`}
+        href={`/blog/${id}`}
     >
         <Image
         alt='blog post title'
@@ -42,7 +46,7 @@ const BlogPost = (
         <p className={`font-semibold pt-4 ${grid && 'pt-0'}`}>
         {title || 'American Express is acquiring Kabbage for as much as $850M'}
         </p>
-    </div>
+    </Link>
   )
 }
 

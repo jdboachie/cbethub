@@ -21,7 +21,6 @@ const Page = () => {
     <div
       className="flex flex-col w-full items-center justify-center"
     >
-      <NavBar />
       <main
             className=' w-full space-y-5 pt-[8em] max-w-6xl'
       >
@@ -48,21 +47,25 @@ const Page = () => {
             grid={view === 'grid'}
             imgURL='/design.jpg'
             title='CBET December Challenge'
+            id='0000001'
           />
           <BlogPost
             grid={view === 'grid'}
             imgURL='/fullstack.jpg'
             title='Full Stack Web Development Bootcamp'
+            id='0000002'
           />
           <BlogPost
             grid={view === 'grid'}
             imgURL='/recruit.jpg'
             title='ACES Media Recruitment'
+            id='0000003'
           />
           <BlogPost
             grid={view === 'grid'}
             imgURL='/blogpic.jpg'
             title='American Express is acquiring Kabbage for as much as $850M'
+            id='0000004'
           />
         </div>
       </main>
