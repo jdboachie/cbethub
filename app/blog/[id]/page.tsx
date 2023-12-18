@@ -18,7 +18,7 @@ const Page = (
             alt='blog post image'
             width={5000}
             height={5000}
-            className='object-cover w-full rounded-lg'
+            className='object-cover w-full'
         />
         {/* animate the image to zoom in on appearance kinda like animate presence */}
         <PageTitle title={post?.title}/>
