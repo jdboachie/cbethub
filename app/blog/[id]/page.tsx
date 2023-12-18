@@ -11,7 +11,7 @@ const Page = (
 
   return (
     <div
-        className="flex flex-col w-full justify-center items-center pt-[8em] max-w-6xl"
+        className="flex flex-col w-full justify-center items-center pt-[8.7em] max-w-6xl"
     >
         <Image
             src={post?.imgURL || '/blogpic.jpg'}
@@ -22,7 +22,7 @@ const Page = (
         />
         {/* animate the image to zoom in on appearance kinda like animate presence */}
         <PageTitle title={post?.title}/>
-        <div className="p-6 text-gray-700 dark:text-[#eee]">
+        <div className="p-4 m-4 rounded-lg text-gray-700 dark:text-[#eee] backdrop-blur">
 
         <p className="leading-loose mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod metus ac tortor consectetur, a dignissim nisl pharetra.
