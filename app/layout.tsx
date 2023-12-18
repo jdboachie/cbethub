@@ -17,7 +17,7 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${inter.className} flex flex-col antialiased bg-[url('/grid.svg')] dark:bg-black`}>
+      <body className={`${inter.className} flex flex-col antialiased bg-[url('/grid.svg')] dark:bg-[rgb(10,10,11)]`}>
         {/* <Image
           src='grid.svg'
           alt='background image'
