@@ -43,7 +43,7 @@ const Home = () => {
                 )}
                 <FunnelIcon className='w-9 h-9 border dark:border-[#333] rounded-lg p-2 bg-white dark:bg-[#111] dark:text-[#eee]' />
             </div>
-            <div className={`w-full p-2 space-y-2 space-x-2 max-sm:space-x-0 grid grid-cols-4 max-sm:grid-cols-1 ${ view === 'grid' && 'max-sm:grid-cols-2 max-sm:space-x-1' } max-md:grid-cols-3 max-lg:grid-cols-4`}>
+            <div className={`w-full p-2 space-y-2 space-x-2 max-sm:space-x-0 grid grid-cols-3 max-sm:grid-cols-1 ${ view === 'grid' && 'max-sm:grid-cols-2 max-sm:space-x-1' } max-md:grid-cols-2 max-lg:grid-cols-3`}>
                 {courseData.map((course) => (
                     <CourseCard
                         grid={view=='grid'}

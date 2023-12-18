@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { inter } from '@/lib/fonts'
 import Footer from '@/components/Footer'
+import Image from 'next/image'
 import './globals.css'
 
 export const metadata: Metadata = {
@@ -16,7 +17,14 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${inter.className} flex flex-col antialiased`}>
+      <body className={`${inter.className} flex flex-col antialiased bg-[url('/grid.svg')] dark:bg-black`}>
+        {/* <Image
+          src='grid.svg'
+          alt='background image'
+          width={1000}
+          height={1000}
+          className='fixed top-0 left-0 w-full h-full z-[-1]'
+        /> */}
         {children}
         <Footer />
       </body>
