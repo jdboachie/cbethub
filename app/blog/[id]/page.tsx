@@ -39,7 +39,7 @@ const Page = (
             commodo blandit eget non sem. Duis ullamcorper mauris ut tellus finibus, et fringilla ex cursus.
         </p>
         <blockquote className="text-gray-600 italic border-l-4 border-blue-500 pl-4 mb-4">
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod metus ac tortor consectetur."
+            &quot;Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod metus ac tortor consectetur.&quot;
         </blockquote>
         <p className="text-gray-700 leading-loose mb-4">
             In hac habitasse platea dictumst. Nunc sit amet elit et felis blandit vulputate. Quisque eu felis eget arcu iaculis

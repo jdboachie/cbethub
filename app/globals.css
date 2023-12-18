@@ -20,7 +20,7 @@
 
 body {
   height: 100vh;
-  @apply bg-gradient-to-tl h-screen dark:via-[#020229] from-white via-white to-zinc-100 dark:from-black  dark:to-black bg-fixed bg-no-repeat
+  @apply bg-gradient-to-tl h-screen dark:via-[#020229] from-[aliceblue] via-zinc-100 to-white dark:from-black  dark:to-black bg-fixed bg-no-repeat
 }
 
 .card-gradient {
