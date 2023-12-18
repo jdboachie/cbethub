@@ -11,7 +11,7 @@ const Page = (
 
   return (
     <div
-        className="flex flex-col w-full justify-center items-center pt-[8em]"
+        className="flex flex-col w-full justify-center items-center pt-[8em] max-w-6xl"
     >
         <Image
             src={post?.imgURL || '/blogpic.jpg'}
