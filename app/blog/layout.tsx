@@ -7,7 +7,7 @@ import NavBar from "@/components/NavBar"
 const Layout = ({children}: {children: React.ReactNode}) => {
   return (
     <div>
-        <NavBar />
+        <NavBar isForBlogView />
         {children}
     </div>
   )

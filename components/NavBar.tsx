@@ -18,7 +18,7 @@ import Image from 'next/image'
 import { usePathname } from 'next/navigation'
 
 
-const NavBar = ({ isForCourseView }: {isForCourseView?: boolean}) => {
+const NavBar = ({ isForCourseView, isForBlogView }: {isForCourseView?: boolean, isForBlogView?: boolean}) => {
     // const [showMainMenu, setShowMainMenu] = useState(false)
     const [showSearchBar, setShowSearchBar] = useState(false)
     const [showNotificationArea, setShowNotificationArea] = useState(false)
@@ -120,7 +120,7 @@ const NavBar = ({ isForCourseView }: {isForCourseView?: boolean}) => {
                     </Link>
                     <Link
                         href={'/blog'}
-                        className={`${currentPath === '/blog' && 'bg-blue-100 text-blue-800 dark:text-white dark:bg-blue-800'} p-3 max-sm:p-1 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
+                        className={`${(currentPath === '/blog' || isForBlogView) && 'bg-blue-100 text-blue-800 dark:text-white dark:bg-blue-800'} p-3 max-sm:p-1 rounded-lg text-xs hover:bg-gray-100 dark:hover:bg-blue-900 w-full`}>
                         <NewspaperIcon
                             className='w-9 h-9 p-2 rounded-full hidden max-sm:inline-block'
                         />
