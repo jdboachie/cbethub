@@ -46,7 +46,7 @@ const NavBar = ({ isForCourseView, isForBlogView }: {isForCourseView?: boolean, 
     return (
       <>
         <nav
-            className='fixed shadow-sm top-0 w-full z-50 border-b dark:border-b-[#333] flex flex-col justify-between dark:text-[#eee] backdrop-blur-lg'
+            className='fixed shadow-sm top-0 w-full z-50 border-b dark:border-b-[#333] flex flex-col justify-between dark:text-[#eee]'
         >
             <div className='flex w-full max-w-6xl mx-auto justify-between p-4 '>
                 <div className='flex justify-between space-x-1 w-full'>
