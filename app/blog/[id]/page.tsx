@@ -20,6 +20,7 @@ const Page = (
             height={5000}
             className='object-cover w-full rounded-lg'
         />
+        {/* animate the image to zoom in on appearance kinda like animate presence */}
         <PageTitle title={post?.title}/>
     </div>
   )

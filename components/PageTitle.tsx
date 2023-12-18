@@ -4,7 +4,7 @@ import { lato } from '@/lib/fonts'
 const PageTitle = ({title}: {title?: string}) => {
   return (
     <div
-        className={`text-5xl max-sm:text-[2.75rem] text-left font-[500] dark:text-[#eee]
+        className={`text-5xl max-sm:text-2xl text-left font-[500] dark:text-[#eee]
                    px-5 py-7`}
     >
         {title? title : 'Error'}
