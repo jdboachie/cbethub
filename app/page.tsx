@@ -13,7 +13,6 @@ import { RectangleGroupIcon, RectangleStackIcon, FunnelIcon } from '@heroicons/r
 const Home = () => {
 
     const [view , setView] = useState<'grid' | 'list'>('list')
-
     const courseData = fetchCourses()
 
   return (

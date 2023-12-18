@@ -39,6 +39,10 @@ const NavBar = ({ isForCourseView, isForBlogView }: {isForCourseView?: boolean, 
 
     const currentPath = usePathname()
 
+    const [theme, setTheme] = useState(
+        typeof window !== "undefined" ? localStorage.theme : "light"
+      );
+
     return (
       <>
         <nav
@@ -87,9 +91,15 @@ const NavBar = ({ isForCourseView, isForBlogView }: {isForCourseView?: boolean, 
                             <div
                                 className='hover:bg-gray-100 dark:hover:bg-blue-900 w-fit rounded-full cursor-pointer'
                             >
-                                <SunIcon
-                                    className='w-9 h-9 border dark:border-[#333] p-2 rounded-full'
-                                />
+                                { theme === "dark" ? (
+                                    <MoonIcon
+                                        className='w-9 h-9 border dark:border-[#333] p-2 rounded-full'
+                                    />
+                                ): (
+                                    <SunIcon
+                                        className='w-9 h-9 border dark:border-[#333] p-2 rounded-full'
+                                    />
+                                )}
                             </div>
                             {/* {showMainMenu ? (
                                     <XMarkIcon
