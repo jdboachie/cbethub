@@ -1,8 +1,7 @@
 import type { Metadata } from 'next'
 import { inter } from '@/lib/fonts'
-import Footer from '@/components/Footer'
-import Image from 'next/image'
 import './globals.css'
+import NavBar from '@/components/NavBar'
 
 export const metadata: Metadata = {
   title: 'CBET Hub',
@@ -18,15 +17,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.className} flex flex-col antialiased bg-[url('/grid.svg')] dark:bg-[rgb(10,10,11)]`}>
-        {/* <Image
-          src='grid.svg'
-          alt='background image'
-          width={1000}
-          height={1000}
-          className='fixed top-0 left-0 w-full h-full z-[-1]'
-        /> */}
-        {children}
-        <Footer />
+        <div className='flex flex-col items-center justify-center w-full'>
+          <NavBar />
+          <main
+            className='w-[90%] max-w-6xl bg-white dark:bg-black border dark:border-[#333] rounded-3xl mt-[7em] mb-6 p-3 space-y-5'
+          >
+          {children}
+          </main>
+        </div>
       </body>
     </html>
   )

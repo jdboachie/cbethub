@@ -71,22 +71,22 @@ const blogPosts = [
     {
         imgURL: "/design.jpg",
         title: "CBET December Challenge",
-        id: "0000001"
+        id: "000001"
     },
     {
         imgURL: "/fullstack.jpg",
         title: "Full Stack Web Development Bootcamp",
-        id: "0000002"
+        id: "000002"
     },
     {
         imgURL: "/recruit.jpg",
         title: "ACES Media Recruitment",
-        id: "0000003"
+        id: "000003"
     },
     {
         imgURL: "/blogpic.jpg",
         title: "American Express is acquiring Kabbage for as much as $850M",
-        id: "0000004"
+        id: "000004"
     }
 ]
 

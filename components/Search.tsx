@@ -3,7 +3,7 @@ import { MagnifyingGlassIcon } from "@heroicons/react/20/solid"
 
 const Search = ({className} : {className?: string}) => {
   return (
-    <div className={`${className} w-full border dark:border-[#333] bg-white dark:bg-[#111] rounded-lg flex p-0.5`}>
+    <div className={`${className} w-full border dark:border-[#333] bg-white dark:bg-black rounded-2xl flex p-2`}>
         <MagnifyingGlassIcon
             className='w-10 px-2.5 text-gray-500 dark:text-[#eee]'
         />

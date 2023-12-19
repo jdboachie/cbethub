@@ -10,19 +10,17 @@ const Page = (
     const post = fetchBlogPostById(params.id)
 
   return (
-    <div
-        className="flex flex-col w-full justify-center items-center pt-[8.7em] max-w-6xl"
-    >
+    <>
         <Image
             src={post?.imgURL || '/blogpic.jpg'}
             alt='blog post image'
             width={5000}
             height={5000}
-            className='object-cover w-full'
+            className='object-cover w-full rounded-3xl'
         />
         {/* animate the image to zoom in on appearance kinda like animate presence */}
         <PageTitle title={post?.title}/>
-        <div className="p-4 m-4 rounded-lg text-gray-700 dark:text-[#eee] backdrop-blur">
+        <div className="p-4 run  m-4 rounded-lg text-gray-700 dark:text-[#eee] backdrop-blur">
 
         <p className="leading-loose mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod metus ac tortor consectetur, a dignissim nisl pharetra.
@@ -56,7 +54,7 @@ const Page = (
             tincidunt, id venenatis urna sagittis. Integer vel leo eu libero facilisis laoreet at a massa.
         </p>
         </div>
-    </div>
+    </>
   )
 }
 

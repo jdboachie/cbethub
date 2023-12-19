@@ -2,75 +2,45 @@
 
 
 import { useState } from 'react'
-import NavBar from '@/components/NavBar'
-import Search from '@/components/Search'
 import PageTitle from '@/components/PageTitle'
-import {
-  RectangleGroupIcon,
-  RectangleStackIcon,
-  FunnelIcon,
-  UserIcon,
-} from '@heroicons/react/24/solid'
 import BlogPost from '@/components/BlogPost'
+import Inquire from '@/components/Inquire'
 
 const Page = () => {
 
   const [view , setView] = useState<'grid' | 'list'>('list')
 
   return (
-    <div
-      className="flex flex-col w-full items-center justify-center"
-    >
-      <main
-            className=' w-full space-y-5 pt-[8em] max-w-6xl'
-      >
+    <>
         <PageTitle title="Blog"/>
-        <div
-            className='my-0 mx-2 flex space-x-0.5'
-        >
-            <Search
-                className=''
-            />
-            {view === 'list' ? (
-                <RectangleGroupIcon
-                    onClick={() => setView('grid')}
-                    className='cursor-pointer w-9 h-9 border dark:border-[#333] rounded-lg p-2 bg-white dark:bg-[#111] dark:text-[#eee]' />
-            ) : (
-                <RectangleStackIcon
-                    onClick={() => setView('list')}
-                    className='cursor-pointer w-9 h-9 border dark:border-[#333] rounded-lg p-2 bg-white dark:bg-[#111] dark:text-[#eee]' />
-            )}
-            <FunnelIcon className='w-9 h-9 border dark:border-[#333] rounded-lg p-2 bg-white dark:bg-[#111] dark:text-[#eee]' />
-        </div>
-        <div className={`w-full dark:text-[#eee] grid grid-cols-2 p-2 ${ view === 'list' && 'max-sm:grid-cols-1'}`}>
+        <Inquire />
+        <div className={`w-full dark:text-[#eee] grid grid-cols-1 ${ view === 'grid' && 'max-sm:grid-cols-2'}`}>
           <BlogPost
             grid={view === 'grid'}
             imgURL='/design.jpg'
             title='CBET December Challenge'
-            id='0000001'
+            id='000001'
           />
           <BlogPost
             grid={view === 'grid'}
             imgURL='/fullstack.jpg'
             title='Full Stack Web Development Bootcamp'
-            id='0000002'
+            id='000002'
           />
           <BlogPost
             grid={view === 'grid'}
             imgURL='/recruit.jpg'
             title='ACES Media Recruitment'
-            id='0000003'
+            id='000003'
           />
           <BlogPost
             grid={view === 'grid'}
             imgURL='/blogpic.jpg'
             title='American Express is acquiring Kabbage for as much as $850M'
-            id='0000004'
+            id='000004'
           />
         </div>
-      </main>
-
-    </div>
+    </>
   )
 }
 
