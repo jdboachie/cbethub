@@ -1,9 +1,7 @@
 'use client'
 
-import NavBar from '@/components/NavBar'
 import PageTitle from '@/components/PageTitle'
 import {
-  UserIcon,
   CameraIcon,
 } from '@heroicons/react/24/solid'
 import Image from 'next/image'
@@ -35,7 +33,7 @@ const page = () => {
 
       {/* Menu */}
       <div
-        className='h-fit p-3'
+        className='h-fit py-3'
       >
         <ul className='flex flex-col space-y-3 border dark:border-[#333] rounded-lg p-2 text-xs dark:text-[#eee] bg-white dark:bg-black'>
           <li className='rounded-lg'>
