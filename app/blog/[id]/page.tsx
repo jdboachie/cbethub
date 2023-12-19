@@ -20,7 +20,7 @@ const Page = (
         />
         {/* animate the image to zoom in on appearance kinda like animate presence */}
         <PageTitle title={post?.title}/>
-        <div className="p-4 m-4 rounded-lg text-gray-700 max-sm:text-sm dark:text-[#eee] backdrop-blur">
+        <div className="p-1 rounded-lg text-gray-700 max-sm:text-sm dark:text-[#eee] backdrop-blur">
 
         <p className="leading-loose mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod metus ac tortor consectetur, a dignissim nisl pharetra.
