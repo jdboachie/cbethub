@@ -12,7 +12,7 @@ const Search = ({className} : {className?: string}) => {
           name=""
           id=""
           placeholder="The funnel thingie no dey work..."
-          className='border-none active:border-none focus:border-none outline-none w-full py-1.5 text-sm text-gray-700 placeholder:text-gray-400 dark:text-gray-50 bg-transparent'
+          className='border-none active:border-none focus:border-none outline-none w-full py-1.5 text-sm max-sm:text-xs text-gray-700 placeholder:text-gray-400 dark:text-gray-50 bg-transparent'
         />
     </div>
   )
