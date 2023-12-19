@@ -39,7 +39,7 @@ const page = (
             </p>
         </div>
         <div
-            className='h-fit px-3'
+            className='h-fit px-1'
         >
             <p className="py-2 px-0.5 text-sm dark:text-[#eee]">
                 Files
