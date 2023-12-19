@@ -1,18 +1,40 @@
-'use client'
+import { schibstedGrotesk } from "@/lib/fonts"
+import Link from 'next/link'
+
 
 const Home = () => {
   return (
     <div
-        className="flex flex-col items-center justify-center w-full"
+        className="h-[76vh]"
     >
-        <main
-            className='w-full mt-[10em] max-w-6xl space-y-5'
+        <div
+            className={`${schibstedGrotesk.className} flex flex-col justify-center items-center h-full text-center font-extrabold`}
         >
-            <p className='font-mono dark:text-white text-center p-20 max-sm:p-10'>
-                Landing page is in development
-                Kindly use the navigation bar to navigate to other pages
+            <p className="text-7xl text-transparent bg-gradient-to-r bg-clip-text from-[#333] via-[#222] dark:from-zinc-400 dark:via-slate-500 to-black dark:to-white">
+                Welcome to the
             </p>
-        </main>
+            <span className={`text-7xl pb-12 text-transparent bg-gradient-to-r from-orange-500 via-red-700 to-blue-600 bg-clip-text`}>
+                CBET HUB
+            </span>
+            <p className="text-xl pb-10 font-semibold text-transparent bg-gradient-to-r bg-clip-text from-[#333] via-[#222] dark:from-zinc-400 dark:via-slate-500 to-black dark:to-white">
+                Your one stop shop for all things CBET
+            </p>
+            <div className="flex font-normal space-x-2 w-1/3">
+                <Link
+                    href='/courses'
+                    className="px-5 py-2 w-full text-lg text-center text-black dark:text-white bg-gradient-to-r from-orange-500/20 via-red-700/20 to-blue-600/20 rounded-2xl"
+                >
+                    Courses
+                </Link>
+                <Link
+                    href='/blog'
+                    className="px-5 py-2 w-full text-lg text-center text-black dark:text-white bg-gradient-to-r from-orange-500/20 via-red-700/20 to-blue-600/20 rounded-2xl"
+                >
+                    Blog
+                </Link>
+
+            </div>
+        </div>
     </div>
   )
 }

@@ -1,5 +1,4 @@
 import React from 'react'
-import { lato } from '@/lib/fonts'
 
 const PageTitle = ({title}: {title?: string}) => {
   return (
