@@ -21,7 +21,7 @@ const Home = () => {
             title='Courses'
         />
         <Inquire />
-        <div className={`w-full space-y-3 mt-3`}>
+        <div className={`w-full grid mt-3 max-sm:grid-cols-1 max-sm:space-y-2 max-lg:grid-cols-2 grid-cols-3`}>
             {courseData.map((course) => (
                 <CourseCard
                     grid={view=='grid'}
@@ -33,7 +33,7 @@ const Home = () => {
                 />
             ))}
             <CourseCardSkeleton grid />
-            <CourseCardSkeleton grid />
+            <CourseCardSkeleton grid/>
             <CourseCardSkeleton grid />
             <CourseCardSkeleton grid />
         </div>

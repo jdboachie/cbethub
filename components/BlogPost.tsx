@@ -26,8 +26,8 @@ const BlogPost = (
         <Image
         alt='blog post title'
         src={imgURL || '/blogpic.jpg'}
-        width={5000}
-        height={5000}
+        width={10000}
+        height={10000}
         className='object-cover w-full rounded-3xl'
         />
         <div

@@ -14,7 +14,7 @@ const Page = () => {
     <>
         <PageTitle title="Blog"/>
         <Inquire />
-        <div className={`w-full dark:text-[#eee] grid grid-cols-1 ${ view === 'grid' && 'max-sm:grid-cols-2'}`}>
+        <div className={`w-full dark:text-[#eee] grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1`}>
           <BlogPost
             grid={view === 'grid'}
             imgURL='/design.jpg'

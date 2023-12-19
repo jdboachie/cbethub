@@ -14,8 +14,8 @@ const Page = (
         <Image
             src={post?.imgURL || '/blogpic.jpg'}
             alt='blog post image'
-            width={5000}
-            height={5000}
+            width={10000}
+            height={10000}
             className='object-cover w-full rounded-3xl'
         />
         {/* animate the image to zoom in on appearance kinda like animate presence */}

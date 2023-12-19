@@ -24,8 +24,7 @@ const CourseCard = (
   return (
     <Link
         className={`border rounded-2xl dark:border-[#333] h-fit p-3 justify-end items-start flex flex-col space-y-2 cursor-pointer
-                   transition duration-250 ease-in-out
-                   ${grid ? 'max-sm:w-fit': 'max-sm:w-full'}
+                   transition duration-250 ease-in-out max-sm:m-0 m-1
                    `}
         onMouseOver={() => setClicked(true)}
         onMouseLeave={() => setClicked(false)}
