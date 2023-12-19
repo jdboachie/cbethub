@@ -16,7 +16,12 @@ export default function RootLayout({
 
   return (
     <html lang="en">
-      <body className={`${inter.className} flex flex-col antialiased bg-[url('/grid.svg')] dark:bg-[rgb(10,10,11)]`}>
+      <body
+      className={`${inter.className} flex flex-col antialiased bg-[url('/grid.svg')] dark:bg-[rgb(10,10,11)]
+      `}>
+        <div
+          className='fixed h-screen w-screen blur-3xl z-[-1] bg-gradient-to-tr from-rose-400/20 via-fuchsia-500/20 to-indigo-500/20'
+        />
         <div className='flex flex-col items-center justify-center w-full'>
           <NavBar />
           <main

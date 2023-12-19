@@ -11,7 +11,7 @@ const NavBar = () => {
     return (
       <>
         <nav
-            className='fixed p-3 w-[90%] max-w-6xl rounded-3xl top-5 z-50 border dark:border-[#333] flex justify-between dark:text-[#eee] backdrop-blur-lg'
+            className='fixed p-3 w-[90%] max-w-6xl rounded-3xl top-5 z-50 border dark:border-[#333] flex justify-between dark:text-[#eee] bg-white dark:bg-black'
         >
             <div className='text-gray-600 dark:text-gray-50'>
                 <ul className='flex space-x-2'>
