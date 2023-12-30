@@ -25,7 +25,7 @@ export default function RootLayout({
         <div className='flex flex-col items-center justify-center w-full'>
           <NavBar />
           <main
-            className='w-[90%] max-sm:w-[100%] max-w-6xl bg-white dark:bg-black border dark:border-[#333] rounded-3xl mt-[6em] mb-6 p-3 max-sm:p-2 space-y-5'
+            className='w-[90%] max-sm:w-[100%] max-w-6xl bg-white dark:bg-black border dark:border-[#333] rounded-3xl mt-[7em] mb-6 p-3 max-sm:p-2 space-y-5'
           >
           {children}
           </main>
