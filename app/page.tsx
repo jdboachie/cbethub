@@ -19,7 +19,7 @@ const Home = () => {
             <p className="text-xl max-sm:text-sm pb-10 font-semibold text-transparent bg-gradient-to-r bg-clip-text from-[#333] via-[#222] dark:from-zinc-400 dark:via-slate-500 to-black dark:to-white">
                 Your one stop shop for all things CBET
             </p>
-            <div className="flex max-sm:flex-col font-normal space-x-2 max-sm:w-5/6">
+            <div className="flex max-sm:flex-col font-normal space-x-2 max-sm:space-x-0 max-sm:space-y-2 max-sm:w-5/6">
                 <Link
                     href='/courses'
                     className="px-16 py-4 w-full text-lg text-center text-black dark:text-white bg-gradient-to-r from-orange-500/20 via-red-700/20 to-blue-600/20 rounded-2xl"
