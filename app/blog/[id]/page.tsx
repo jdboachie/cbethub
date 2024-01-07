@@ -16,11 +16,11 @@ const Page = (
             alt='blog post image'
             width={10000}
             height={10000}
-            className='object-cover w-full rounded-3xl'
+            className='object-cover w-full rounded-xl'
         />
         {/* animate the image to zoom in on appearance kinda like animate presence */}
         <PageTitle title={post?.title}/>
-        <div className="p-1 rounded-lg text-gray-700 max-sm:text-sm dark:text-[#eee] backdrop-blur">
+        <div className="p-3 text-gray-400 text-sm">
 
         <p className="leading-loose mb-4">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod metus ac tortor consectetur, a dignissim nisl pharetra.

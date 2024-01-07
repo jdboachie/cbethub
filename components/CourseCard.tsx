@@ -23,21 +23,21 @@ const CourseCard = (
     const [clicked, setClicked] = useState(false)
   return (
     <Link
-        className={`border rounded-2xl dark:border-[#333] h-fit p-3 justify-end items-start flex flex-col space-y-2 cursor-pointer
+        className={`border rounded-xl dark:border-[#333] h-fit p-3 justify-end items-start flex flex-col space-y-2 cursor-pointer
                    transition duration-250 ease-in-out max-sm:m-0 m-1
                    `}
         onMouseOver={() => setClicked(true)}
         onMouseLeave={() => setClicked(false)}
         href={'/courses/' + courseCode?.toLowerCase()}
     >
-        <p className="font-mono max-sm:text-xs text-gray-500 dark:text-gray-500">{courseCode}</p>
+        <p className="font-mono text-xs text-gray-500 dark:text-gray-500">{courseCode}</p>
         <p
-            className='text-left max-sm:text-xs text-gray-500 dark:text-gray-500'
+            className='text-left text-xs text-gray-500 dark:text-gray-500'
         >
             {lecturerName}
         </p>
         <p
-            className={`text-left pb-1 text-lg max-sm:text-sm font-[500] text-gray-700 dark:text-gray-200`}
+            className={`text-left pb-1 text-sm max-sm:text-sm font-[500] text-gray-700 dark:text-gray-200`}
         >
             {courseName}
         </p>

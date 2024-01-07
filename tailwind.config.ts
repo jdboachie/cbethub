@@ -25,6 +25,11 @@ const config: Config = {
           '100': '#CAF0F8',
         },
       },
+      backgroundImage: ({ theme }) => ({
+        'vc-border-gradient': `radial-gradient(at left top, ${theme(
+          'colors.zinc.400',
+        )}, 50px, ${theme('colors.zinc.800')} 50%)`,
+      }),
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         oswald: ['Oswald', 'serif'],

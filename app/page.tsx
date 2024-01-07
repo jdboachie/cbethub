@@ -22,13 +22,13 @@ const Home = () => {
             <div className="flex font-normal space-x-2 max-sm:w-5/6">
                 <Link
                     href='/courses'
-                    className="px-5 py-2 w-full text-lg text-center text-black dark:text-white bg-gradient-to-r from-orange-500/20 via-red-700/20 to-blue-600/20 rounded-2xl"
+                    className="px-16 py-4 w-full text-lg text-center text-black dark:text-white bg-gradient-to-r from-orange-500/20 via-red-700/20 to-blue-600/20 rounded-2xl"
                 >
                     Courses
                 </Link>
                 <Link
                     href='/blog'
-                    className="px-5 py-2 w-full text-lg text-center text-black dark:text-white bg-gradient-to-r from-orange-500/20 via-red-700/20 to-blue-600/20 rounded-2xl"
+                    className="px-16 py-4 w-full text-lg text-center text-black dark:text-white bg-gradient-to-r from-orange-500/20 via-red-700/20 to-blue-600/20 rounded-2xl"
                 >
                     Blog
                 </Link>

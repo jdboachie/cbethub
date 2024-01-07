@@ -5,7 +5,7 @@ import PageTitle from "@/components/PageTitle"
 import Tag from "@/components/Tag"
 import File from '@/components/File'
 import { fetchCourseById } from "@/lib/_data"
-import { DocumentIcon } from "@heroicons/react/24/solid"
+import { DocumentIcon } from "@heroicons/react/24/outline"
 
 
 const page = (

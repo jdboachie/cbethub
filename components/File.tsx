@@ -1,4 +1,4 @@
-import { DocumentIcon } from "@heroicons/react/24/solid"
+import { DocumentIcon } from "@heroicons/react/24/outline"
 
 DocumentIcon
 

@@ -4,7 +4,7 @@ import {
     Squares2X2Icon,
     RectangleStackIcon,
     FunnelIcon,
-} from "@heroicons/react/24/solid"
+} from "@heroicons/react/24/outline"
 import Search from "./Search"
 
 
@@ -19,7 +19,7 @@ const Inquire = () => {
                 className=''
             />
             <div className="text-gray-700 dark:text-gray-50">
-                <FunnelIcon className='w-12 h-12 border dark:border-[#333] rounded-2xl p-3 bg-white dark:bg-black dark:text-[#eee]' />
+                <FunnelIcon className='w-12 h-12 border dark:border-[#333] rounded-xl p-3 bg-white dark:bg-black dark:text-[#eee]' />
             </div>
         </div>
   )

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { inter } from '@/lib/fonts'
 import './globals.css'
 import NavBar from '@/components/NavBar'
+import Footer from '@/components/Footer'
 
 export const metadata: Metadata = {
   title: 'CBET Hub',
@@ -18,17 +19,20 @@ export default function RootLayout({
     <html lang="en">
       <body
       className={`${inter.className} flex flex-col antialiased bg-[url('/grid.svg')] dark:bg-[rgb(10,10,11)]
-      `}>
+      m-3`}>
         <div
-          className='fixed h-screen w-screen blur-3xl z-[-1] opacity-[0.4] bg-gradient-to-tr from-rose-400/20 via-fuchsia-500/20 to-indigo-500/20'
+          className='fixed h-screen w-screen blur-3xl z-[-1] opacity-[0.2] bg-gradient-to-br from-indigo-300 dark:from-fuchsia-700/20 via-gray-300 dark:via-blue-700/20 to-rose-400 dark:to-rose-700/20'
         />
         <div className='flex flex-col items-center justify-center w-full'>
           <NavBar />
-          <main
-            className='w-[90%] max-sm:w-[95%] max-w-6xl bg-white dark:bg-black border dark:border-[#333] rounded-3xl mt-[7em] mb-6 p-3 max-sm:p-3 space-y-5'
-          >
-          {children}
-          </main>
+          <div className="dark:bg-vc-border-gradient p-px rounded-2xl mt-[7em] mb-4 w-full max-w-4xl">
+            <main
+              className='bg-white dark:bg-black rounded-2xl p-3 space-y-5'
+            >
+            {children}
+            </main>
+          </div>
+          <Footer />
         </div>
       </body>
     </html>

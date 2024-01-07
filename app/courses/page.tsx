@@ -7,7 +7,7 @@ import CourseCardSkeleton from '@/components/skeletons/CourseCardSkeleton'
 
 import { useState } from 'react'
 import { fetchCourses } from '@/lib/_data'
-import { RectangleGroupIcon, RectangleStackIcon, FunnelIcon } from '@heroicons/react/24/solid'
+import { RectangleGroupIcon, RectangleStackIcon, FunnelIcon } from '@heroicons/react/24/outline'
 import Inquire from '@/components/Inquire'
 
 const Home = () => {

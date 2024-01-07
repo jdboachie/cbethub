@@ -3,7 +3,7 @@
 import PageTitle from '@/components/PageTitle'
 import {
   CameraIcon,
-} from '@heroicons/react/24/solid'
+} from '@heroicons/react/24/outline'
 import Image from 'next/image'
 
 const page = () => {
