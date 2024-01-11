@@ -1,6 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
+  darkMode: ['class'],
   content: [
     './pages/**/*.{js,ts,jsx,tsx,mdx}',
     './components/**/*.{js,ts,jsx,tsx,mdx}',
@@ -26,10 +27,14 @@ const config: Config = {
         },
       },
       backgroundImage: ({ theme }) => ({
-        'vc-border-gradient': `radial-gradient(at left top, ${theme(
+        'vc-border-gradient-dark': `radial-gradient(at left top, ${theme(
           'colors.zinc.400',
         )}, 50px, ${theme('colors.zinc.800')} 50%)`,
+        'vc-border-gradient-light': `radial-gradient(at left top, ${theme(
+          'colors.purple.800',
+        )}, 50px, ${theme('colors.pink.200')} 50%)`,
       }),
+
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
         oswald: ['Oswald', 'serif'],
