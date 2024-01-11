@@ -50,7 +50,7 @@ const NavBar = () => {
     return (
       <div className='fixed w-[96%] p-px rounded-full bg-vc-border-gradient-light dark:bg-vc-border-gradient-dark top-[3vh] z-50 max-w-4xl'>
         <nav
-            className='p-2 w-full shadow-md rounded-full flex justify-between dark:text-[#eee] bg-white dark:bg-black'
+            className='p-3 w-full shadow-md rounded-full flex justify-between dark:text-[#eee] bg-white dark:bg-black'
         >
             <div className='text-gray-600 dark:text-gray-50'>
                 <ul className='flex space-x-2'>
