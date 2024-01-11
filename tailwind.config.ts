@@ -31,7 +31,7 @@ const config: Config = {
           'colors.zinc.400',
         )}, 50px, ${theme('colors.zinc.800')} 50%)`,
         'vc-border-gradient-light': `radial-gradient(at left top, ${theme(
-          'colors.zinc.600',
+          'colors.zinc.400',
         )}, 50px, ${theme('colors.zinc.200')} 50%)`,
       }),
 

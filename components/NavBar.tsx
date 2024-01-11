@@ -112,7 +112,7 @@ const NavBar = () => {
                 </Link>
                 <button
                     onClick={toggleDarkMode}
-                    className={`rounded-full text-sm m-2 p-4 focus:outline-none ${darkMode ? 'bg-gray-800 text-white' : 'bg-gray-200 dark:bg-gray-600 dark:text-white'}`}
+                    className={`rounded-full text-sm m-2 p-4 focus:outline-none ${darkMode ? 'bg-[#333] text-white' : 'bg-gray-200 dark:bg-gray-600 dark:text-white'}`}
                 >
                     {darkMode ? (
                     <SunIcon
