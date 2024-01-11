@@ -14,7 +14,7 @@ import { useState, useRef, useEffect } from 'react'
 
 const NavBar = () => {
 
-    const [darkMode, setDarkMode] = useState(false);
+    const [darkMode, setDarkMode] = useState(true);
     const [dropdownOpen, setDropdownOpen] = useState(false);
     const dropdownRef = useRef<HTMLDivElement>(null);
 
