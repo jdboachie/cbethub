@@ -6,7 +6,7 @@ const courses = [
         description: '',
         lecturerName: 'Dr. John Doe',
         fileCount: 5,
-        tags: ['College of Engineering']
+        tags: ['COE']
     },
     {
         courseCode: 'COE291',
@@ -14,7 +14,7 @@ const courses = [
         description: '',
         lecturerName: 'Prof. Jane Smith',
         fileCount: 7,
-        tags: ['Computer Engineering', 'Telecommunications Engineering', 'Biomedical Engineering']
+        tags: ['ACES', 'TELESA', 'BEMESS']
     },
     {
         courseCode: 'COE253',
@@ -22,7 +22,7 @@ const courses = [
         description: '',
         lecturerName: 'Dr. Emily Addo',
         fileCount: 7,
-        tags: ['College of Engineering']
+        tags: ['COE']
     },
     {
         courseCode: 'COE283',
@@ -30,7 +30,7 @@ const courses = [
         description: '',
         lecturerName: 'Dr. Selase Agbemenu',
         fileCount: 9,
-        tags: ['Computer Engineering', 'Computer Science', 'Electrical Engineering']
+        tags: ['ACES', 'CS', 'ELEESA']
     },
     {
         courseCode: 'COE559',
@@ -38,7 +38,7 @@ const courses = [
         description: '',
         lecturerName: 'Dr. Theresa Adjaidoo',
         fileCount: 15,
-        tags: ['Computer Engineering', 'Computer Science']
+        tags: ['ACES', 'CS']
     },
     {
         courseCode: 'COE213',
@@ -46,7 +46,7 @@ const courses = [
         description: '',
         lecturerName: 'Dr. Theresa Adjaidoo',
         fileCount: 12,
-        tags: ['Computer Engineering', 'Computer Science']
+        tags: ['ACES', 'CS']
     },
     {
         courseCode: 'MATH151',
@@ -54,7 +54,7 @@ const courses = [
         description: '',
         lecturerName: 'Dr. Niacin Touto',
         fileCount: 21,
-        tags: ['Computer Engineering', 'Computer Science']
+        tags: ['ACES', 'CS']
     },
     {
         courseCode: 'CBE442',
@@ -62,7 +62,7 @@ const courses = [
         description: '',
         lecturerName: 'Dr. Dototo Mba',
         fileCount: 2,
-        tags: ['Computer Engineering', 'Computer Science']
+        tags: ['ACES', 'CS']
     },
 
 ]
