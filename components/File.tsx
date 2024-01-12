@@ -11,7 +11,7 @@ const File = () => {
                 coursebook.pdf
             </p>
         </div>
-        <p className="text-gray-400 flex space-x-2">
+        <p className="text-gray-400 flex space-x-2 max-sm:hidden">
             <span>15/01/2023</span>
             <span className="max-sm:hidde">18:36</span>
         </p>
