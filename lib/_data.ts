@@ -6,7 +6,7 @@ const courses = [
         description: '',
         lecturerName: 'Dr. John Doe',
         fileCount: 5,
-        tags: ['Computer Engineering', 'Computer Science']
+        tags: ['College of Engineering']
     },
     {
         courseCode: 'COE291',
@@ -14,7 +14,7 @@ const courses = [
         description: '',
         lecturerName: 'Prof. Jane Smith',
         fileCount: 7,
-        tags: ['Computer Engineering', 'Computer Science']
+        tags: ['Computer Engineering', 'Telecommunications Engineering', 'Biomedical Engineering']
     },
     {
         courseCode: 'COE253',
@@ -22,7 +22,7 @@ const courses = [
         description: '',
         lecturerName: 'Dr. Emily Addo',
         fileCount: 7,
-        tags: ['Computer Engineering', 'Computer Science']
+        tags: ['College of Engineering']
     },
     {
         courseCode: 'COE283',
@@ -30,7 +30,7 @@ const courses = [
         description: '',
         lecturerName: 'Dr. Selase Agbemenu',
         fileCount: 9,
-        tags: ['Computer Engineering', 'Computer Science']
+        tags: ['Computer Engineering', 'Computer Science', 'Electrical Engineering']
     },
     {
         courseCode: 'COE559',
@@ -71,22 +71,22 @@ const blogPosts = [
     {
         imgURL: "/design.jpg",
         title: "CBET December Challenge",
-        id: "000001"
+        id: "0001"
     },
     {
         imgURL: "/fullstack.jpg",
         title: "Full Stack Web Development Bootcamp",
-        id: "000002"
+        id: "0002"
     },
     {
         imgURL: "/recruit.jpg",
         title: "ACES Media Recruitment",
-        id: "000003"
+        id: "0003"
     },
     {
         imgURL: "/blogpic.jpg",
         title: "American Express is acquiring Kabbage for as much as $850M",
-        id: "000004"
+        id: "0004"
     }
 ]
 

@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.gradient-text {
+    @apply text-transparent bg-gradient-to-r from-orange-500 via-red-700 to-blue-600 bg-clip-text;
+}

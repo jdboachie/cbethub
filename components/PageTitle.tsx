@@ -3,7 +3,7 @@ import React from 'react'
 const PageTitle = ({title}: {title?: string}) => {
   return (
     <div
-        className={`text-3xl max-sm:text-2xl text-left font-bold text-gray-700 dark:text-gray-50
+        className={`gradient-text text-5xl max-sm:text-3xl text-left font-bold
                    px-2 py-5`}
     >
         {title? title : 'Error'}

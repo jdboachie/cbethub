@@ -19,8 +19,8 @@ const BlogPost = (
   return (
     <Link
         className={`border h-fit m-1 w-fit rounded-xl dark:border-[#333] justify-end items-start flex flex-col space-y-2 cursor-pointer
-        hover:shadow active:bg-transparent dark:bg-black bg-white
-        transition duration-250 ease-in-out hover:text-blue-500`}
+        hover:shadow-lg hover:scale-105 active:bg-transparent dark:bg-black bg-white
+        transition duration-250 ease-in-out`}
         href={`/blog/${id}`}
     >
         <Image
@@ -31,10 +31,17 @@ const BlogPost = (
         className='object-cover w-full rounded-t-xl'
         />
         <div
-            className={`space-x-1 my-2 p-3 flex ${grid && 'flex-col'} text-left text-gray-700 dark:text-[#ccc] rounded-lg hover:bg-gray-100 dark:hover:bg-blue-900`}
+            className={`space-x-1 my-2 p-3 flex ${grid && 'flex-col'} text-left text-gray-700 dark:text-[#ccc] rounded-lg hover:text-blue-400 dark:hover:text-blue-900`}
         >
-            <div className="w-9 h-9 p-2 animate-pulse border dark:border-[#333] rounded-full">
-                <UserIcon className="text-black dark:text-white" />
+            <div className="w-9 h-9 rounded-full">
+                <Image
+                    src={'/jdboachie.jpg'}
+                    alt='user image'
+                    width={1000}
+                    height={1000}
+                    objectFit='cover'
+                    className='rounded-full w-9 h-9'
+                />
             </div>
             <p
                 className='p-0.5 w-fit text-xs'
